@@ -61,6 +61,7 @@
   }
 
   * {
+
     background-image: url('../../assets/bk.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
