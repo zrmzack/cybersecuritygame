@@ -3,60 +3,110 @@
     <h1>Cyber security</h1>
 
     <!--            <label for="username">Username</label>-->
-    <input class="qxs-ic_user qxs-icon" id="username" type="text" name="username" placeholder="用户名"
-           @blur="checkUserName()" v-model="username  "/>
-    <p v-show="usernameAlert">len enough</p>
+
+    <input class="qxs-ic_user qxs-icon" id="username" type="text" name="username" placeholder="Username"
+           @keyup="checkUserName()" v-model="username" @focus="checkUserName()"/>
+    <p v-show="usernameAlert">Input a valid username</p>
     <br>
     <!--            <label for="password1">Password</label>-->
-    <input class="qxs-ic_password qxs-icon" placeholder="Password" id="password1" type="text" name="password1"/>
+    <input class="qxs-ic_password qxs-icon" placeholder="Password" id="password1" type="text" name="password1"
+           v-model="pwd1" @keyup="checkPassword()"/>
     <br>
     <!--            <label for="password2">Confirm Password</label>-->
-    <input class=" qxs-ic_confirm qxs-icon" placeholder="Confirm Password" id="password2" type="text" name="Password2"/>
+    <input class=" qxs-ic_confirm qxs-icon" placeholder="Confirm Password"
+           id="password2" type="text" name="Password2" @keyup="checkPassword()"
+           v-model="pwd2"/>
+    <p v-show="passwordAlertnotsame">Input the same password</p>
+    <p v-show="nicePasswordAlert">You have a nice password!! Now start game</p>
+    <p v-show="securityAlert">Combine numbers, uppercases, lowcases and special </p>
+    <p style="color: red" v-show="passwordAlertShort">Your password is too short, it can be brute force quickly!(use
+      lowcases and upcases and numbers together</p>
     <br>
     <el-button class="login_btn" type="button" @click="jump()">Start</el-button>
 
   </div>
-
-
 </template>
 
 
 <script>
   export default {
     name: "password",
+
     data() {
       return {
         username: '',
         pwd1: '',
         pwd2: '',
-        usernameAlert: false
+        usernameAlert: false,
+        passwordAlertnotsame: false,
+        nicePasswordAlert: false,
+        passwordAlertShort: false,
+        securityAlert: false,
       }
     },
     methods: {
       checkUserName() {
         // 判断自己写
-        console.log(this.username.length)
-        if (this.username.length > 1) {
-          console.log('???')
 
+        console.log(this.username.length)
+        if (this.username.length <= 1) {
           this.usernameAlert = true
         }
+        if (this.username.length > 1) {
+          if ((/.*[a-z]+.*/).test(this.username) || (/.*[A-Z]+.*/).test(this.username)) {
+            this.usernameAlert = false
+            console.log("pipeichengg")
+          }
+
+        }
       },
+
+      checkPassword() {
+        console.log(this.pwd1)
+        if (this.pwd1 === this.pwd2) {
+          this.passwordAlertnotsame = false;
+          this.securityAlert = true
+          if (this.pwd1.length < 8) {
+            this.passwordAlertShort = true
+            this.passwordAlertnotsame = false
+            this.nicePasswordAlert = false
+
+          } else if (this.pwd1.length >= 8 && (/.*[a-z]+.*/).test(this.pwd1) && (/.*[A-Z]+.*/).test(this.pwd1) && (/^[0-9]*/).test(this.pwd1)
+              && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd1)) {
+            this.nicePasswordAlert = true
+            this.passwordAlertShort = false
+            this.passwordAlertnotsame = false
+            this.securityAlert = false
+          }
+        }
+        if (this.pwd1 !== this.pwd2) {
+          this.nicePasswordAlert = false
+          this.passwordAlertShort = false
+          this.passwordAlertnotsame = false
+          this.securityAlert = false
+          this.passwordAlertnotsame = true;
+
+        }
+      },
+
       jump() {
+
         console.log(this.username)
         this.$router.push({
           path: "/lunchTime",
           query: {
-            username: this.username
-          }
+            username: this.username,
+          },
+
         })
       }
+
     }
   }
 </script>
 
 <style scoped>
-  input::placeholder{
+  input::placeholder {
     color: white;
   }
 
@@ -68,11 +118,12 @@
 
   }
 
-  h1{
+  h1 {
     text-align: center;
     font-size: 50px;
     color: white;
   }
+
   .login_form {
     padding-top: 10%;
     padding-left: 10%;
