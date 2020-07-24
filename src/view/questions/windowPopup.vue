@@ -10,10 +10,11 @@
     <div class="form-wrapper">
 
       <div>
-        <p>Workmate invite you to have lunch together, but some important documents put in your table, you need some
-          time to deal with it, or let your workmate go for lunch alone?</p>
-        <el-button round>go for lunch with your workmate together</el-button>
-        <el-button round @click="add">let you workmate for lunch alone, and deal with your own file</el-button>
+        <p>When you browsing a web, a pop-up warns you that a virus affect your computer. It give you a tip that you
+          need install his software to delete the virus. What should you do?</p>
+        <el-button round>Click the tip, and install the required software to deal with the software.</el-button>
+        <el-button round @click="add">Close the browser</el-button>
+        <el-button round @click="add">close the pop-up through red "X" in upper corner</el-button>
       </div>
     </div>
 
@@ -22,9 +23,9 @@
 </template>
 
 <script>
-    export default {
-        name: "windowPopup"
-    }
+  export default {
+    name: "windowPopup"
+  }
 </script>
 
 <style scoped>

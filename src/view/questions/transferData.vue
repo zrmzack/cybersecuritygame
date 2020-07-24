@@ -10,7 +10,7 @@
 
       <div>
         <p>When you transfer data, you want to go washing room. What should you do?</p>
-        <el-button round>Go toilet directly, transferring data automatically</el-button>
+        <el-button round>Go toilet directly, let transfer data automatically</el-button>
         <el-button round @click="add">Stop transferring data and lock your computer</el-button>
       </div>
     </div>
