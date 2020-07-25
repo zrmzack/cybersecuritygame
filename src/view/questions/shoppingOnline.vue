@@ -22,35 +22,48 @@
 </template>
 
 <script>
-    export default {
-        name: "shoppingOnline",
-      created() {
-        console.log(this.$route.query.username)
-        console.log(this.$route.query.money)
-        this.username = this.$route.query.username
-        this.money = this.$route.query.money
+  export default {
+    name: "shoppingOnline",
+    created() {
+      console.log(this.$route.query.username)
+      console.log(this.$route.query.money)
+      this.username = this.$route.query.username
+      this.money = this.$route.query.money
+    },
+    data() {
+      return {
+        username: '',
+        position: 'test',
+        money: 0,
+      }
+    },
+    methods: {
+      add: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/wifiAttack',
+          query: {
+            username: this.username,
+            money: this.money,
+          }
+        })
       },
-      data() {
-        return {
-          username: '',
-          position: 'test',
-          money: 0,
-        }
-      },
-      methods: {
-        add: function () {
-          this.money += 10;
-          this.$router.push({
-            path: '/wifiAttack',
-            query: {
-              username: this.username,
-              money: this.money,
-            }
-          })
+      getPosition: function () {
+        if (this.money < 40) {
+          this.position = "Beginner Programmer"
+        } else if (this.money >= 40 && this.money < 90) {
+          this.position = "Intermediate Programmer"
+        } else if (this.money >= 90 && this.money < 140) {
+          this.position = "Senior Programmer"
+        } else {
+          this.position = "Development Manager"
         }
       }
-
+    }, mounted: function () {
+      this.getPosition()
     }
+
+  }
 </script>
 
 <style scoped>

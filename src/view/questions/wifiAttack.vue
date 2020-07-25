@@ -47,6 +47,17 @@
             money: this.money,
           }
         })
+      },
+      getPosition: function () {
+        if (this.money < 40) {
+          this.position = "Beginner Programmer"
+        } else if (this.money >= 40 && this.money < 90) {
+          this.position = "Intermediate Programmer"
+        } else if (this.money >= 90 && this.money < 140) {
+          this.position = "Senior Programmer"
+        } else {
+          this.position="Development Manager"
+        }
       }
     }
 

@@ -34,7 +34,11 @@
                     }
                 })
             }
+        },
+        mounted: function () {
+            this.getPosition()
         }
+
     }
 </script>
 
