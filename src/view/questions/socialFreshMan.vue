@@ -1,28 +1,30 @@
 <template>
-  <div>  <h1>
+  <div><h1>
     Username:{{username}}
     Position:{{position}}
     Money:{{money}}
     Cybersecurity
   </h1>
 
-  <div class="form-wrapper">
 
-    <div>
-      <p>After you print a vital pdf in public computer, how to deal with the pdf in the computer?</p>
-      <el-button round>Put it in the computer,maybe you need print it next time</el-button>
-      <el-button round @click="add">move to trash bin and delete it</el-button>
+    <div class="form-wrapper">
+
+      <div>
+        <p>One day, you got a call, he described himself as a new employee. He said he could not log into the system. He
+          wanted you could help him to login to system. What should you do?</p>
+        <el-button round>Ignore him</el-button>
+        <el-button round>Help him to login the system</el-button>
+        <el-button round @click="add">Check his employment information, consider whether to help him</el-button>
+      </div>
     </div>
-  </div>
-  </div>
 
+  </div>
 </template>
 
 <script>
   export default {
-    name: "pdfPrint",
+    name: "socialFreshMan",
     created() {
-      console.log(this.$route.query.username)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
     },
@@ -37,7 +39,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/promotion',
+          path: '/repassword',
           query: {
             username: this.username,
             money: this.money,

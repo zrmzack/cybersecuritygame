@@ -9,13 +9,14 @@
     <div class="form-wrapper">
 
       <div>
-        <p>Now, as you got a promotion, you are in a data department. When you transfer data to your team members, your
+        <p>Now, as you got a promotion, you are in a data department. The data is all very important. When you transfer
+          data to your team members, your
           computer alert you need to update the
           firewall immediately. What should
           you do?</p>
-        <el-button round>stop transferring data temporyly, and update the firewall</el-button>
-        <el-button round @click="add">ignore it</el-button>
-        <el-button round @click="add">after you finish transferring data, update the firewall immediately.</el-button>
+        <el-button round @click="add">stop transferring data temporyly, and update the firewall</el-button>
+        <el-button round>ignore it</el-button>
+        <el-button round>after you finish transferring data, update the firewall immediately.</el-button>
       </div>
     </div>
   </div>
@@ -23,7 +24,31 @@
 
 <script>
   export default {
-    name: "fireWallData"
+    name: "fireWallData",
+    created() {
+      console.log(this.$route.query.username)
+      this.username = this.$route.query.username
+      this.money = this.$router.query.money
+    },
+    data() {
+      return {
+        username: '',
+        position: 'test',
+        money: 0,
+      }
+    },
+    methods: {
+      add: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/windowPopup',
+          query: {
+            username: this.username,
+            money: this.money,
+          }
+        })
+      }
+    }
   }
 </script>
 

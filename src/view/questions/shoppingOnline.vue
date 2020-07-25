@@ -10,10 +10,10 @@
     <div class="form-wrapper">
 
       <div>
-        <p>Come to another city for business, your workmate will talk some company decisions with you in public place. What should you do?</p>
-        <el-button round>Keep talking with your workmate</el-button>
-        <el-button round>ignore your workmate</el-button>
-        <el-button round @click="add">Tell your workmate to stop this topic</el-button>
+        <p>One day, you want to buy a precious thing online. What is the safest way to pay online?</p>
+        <el-button round @click="add">Use an online payment account connected to your own bank account.</el-button>
+        <el-button round>Use a debit card</el-button>
+        <el-button round>Use a credit card</el-button>
       </div>
     </div>
 
@@ -23,11 +23,12 @@
 
 <script>
     export default {
-        name: "outsideBusiness",
+        name: "shoppingOnline",
       created() {
         console.log(this.$route.query.username)
+        console.log(this.$route.query.money)
         this.username = this.$route.query.username
-        this.money=this.$route.query.money
+        this.money = this.$route.query.money
       },
       data() {
         return {
@@ -40,7 +41,7 @@
         add: function () {
           this.money += 10;
           this.$router.push({
-            path: '/socialAttachment',
+            path: '/wifiAttack',
             query: {
               username: this.username,
               money: this.money,
@@ -48,6 +49,7 @@
           })
         }
       }
+
     }
 </script>
 

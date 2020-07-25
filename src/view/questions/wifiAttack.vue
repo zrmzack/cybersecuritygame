@@ -23,7 +23,34 @@
 
 <script>
   export default {
-    name: "wifiAttack"
+    name: "wifiAttack",
+    created() {
+      console.log(this.$route.query.username)
+      console.log(this.$route.query.money)
+      this.username = this.$route.query.username
+      this.money = this.$route.query.money
+    },
+    data() {
+      return {
+        username: '',
+        position: 'test',
+        money: 0,
+      }
+    },
+    methods: {
+      add: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/pdfPrint',
+          query: {
+            username: this.username,
+            money: this.money,
+          }
+        })
+      }
+    }
+
+
   }
 </script>
 

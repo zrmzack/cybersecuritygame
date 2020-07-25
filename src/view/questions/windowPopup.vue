@@ -24,7 +24,31 @@
 
 <script>
   export default {
-    name: "windowPopup"
+    name: "windowPopup",
+    created() {
+      console.log(this.$route.query.username)
+      this.username = this.$route.query.username
+      this.money = this.$router.query.username
+    },
+    data() {
+      return {
+        username: '',
+        position: 'test',
+        money: 0,
+      }
+    },
+    methods: {
+      add: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/promotion',
+          query: {
+            username: this.username,
+            money: this.money,
+          }
+        })
+      }
+    }
   }
 </script>
 

@@ -10,11 +10,13 @@
     <div class="form-wrapper">
 
       <div>
-        <p>The firewall need to be update, it will take some time to update it. Do you want to stop your work and update
-          it?</p>
-        <el-button round>Keep on working, after finish all work, then upload the firewall</el-button>
-        <el-button round>ignore it</el-button>
-        <el-button round @click="add">stop the work, and upload firewall first</el-button>
+        <p @load="positionGet">Workmate invite you to have lunch together, but some important documents in your table
+          need to be sorted.
+          What should you do?</p>
+        <el-button round @click="add">deal with your document and tell you workmate you can have lunch with him next
+          time.
+        </el-button>
+        <el-button round>go for lunch with your workmate together</el-button>
       </div>
     </div>
 
@@ -30,6 +32,7 @@
       console.log(this.$route.query.username)
       this.username = this.$route.query.username
     },
+
     data() {
       return {
         username: '',
@@ -41,14 +44,22 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/pdfPrint',
+          path: '/transferData',
           query: {
             username: this.username,
             money: this.money,
           }
         })
+      },
+      getPosition: function () {
+        if (this.money < 40) {
+        }
       }
+    },
+    mounted: function () {
+      this.getPosition()
     }
+
 
   }
 </script>

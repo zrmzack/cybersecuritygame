@@ -38,6 +38,14 @@
     methods: {
       add: function () {
         this.money += 10;
+        this.$router.push({
+          path: '/shoppingOnline',
+
+          query: {
+            username: this.username,
+            money: this.money,
+          }
+        })
       }
     }
 
