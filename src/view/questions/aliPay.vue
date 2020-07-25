@@ -12,9 +12,9 @@
       <div>
         <p>You have a nice software, it can transfer money quickly and convinenty. How to protect your own data
           safe?</p>
-        <el-button round>1</el-button>
-        <el-button round>2</el-button>
-        <el-button round @click="add">3</el-button>
+        <el-button round>Turn off all your app permissions</el-button>
+        <el-button round>Go through and turn off some permissions</el-button>
+        <el-button round @click="add">To use the software convinently, enable all permissions</el-button>
       </div>
     </div>
 

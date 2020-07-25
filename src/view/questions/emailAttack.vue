@@ -10,9 +10,12 @@
     <div class="form-wrapper">
 
       <div>
-        <p>You receive an email, which shows a link </p>
-        <el-button round>go for lunch with your workmate together</el-button>
-        <el-button round @click="add">let you workmate for lunch alone, and deal with your own file</el-button>
+        <p>Your workmate sends you an email, it contains some wrong spellings. And it tells you that your company email
+          will
+          expire in a week, please click this link to login to your account. What should you do?</p>
+        <el-button round>CLick the link</el-button>
+        <el-button round @click="add">Delete the email</el-button>
+        <el-button round @click="add">hover over the link to see if it gose to an authentic site</el-button>
       </div>
     </div>
 
@@ -21,9 +24,9 @@
 </template>
 
 <script>
-    export default {
-        name: "emailAttack"
-    }
+  export default {
+    name: "emailAttack"
+  }
 </script>
 
 <style scoped>
