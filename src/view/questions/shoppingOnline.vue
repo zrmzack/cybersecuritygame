@@ -1,24 +1,41 @@
 <template>
-  <div><h1>
-    Username:{{username}}
-    Position:{{position}}
-    Money:{{money}}
-    Cybersecurity
-  </h1>
+  <div class="whole">
+    <div class="header w">
+      <h1>
+        Cybersecurity
+      </h1>
+    </div>
+    <div class="w">
+      <div class="score">
+        <ur>
+          <li>
+            <a> Username:{{username}}</a></li>
+          <li>
+            <a> Position:{{position}}</a>
+          </li>
+          <li>
+            <a> Money:{{money}}</a>
+          </li>
+
+
+        </ur>
+
+      </div>
+
 
 
     <div class="form-wrapper">
-
-      <div>
-        <p>One day, you want to buy a precious thing online. What is the safest way to pay online?</p>
-        <el-button round @click="add">Use an online payment account connected to your own bank account.</el-button>
-        <el-button round>Use a debit card</el-button>
-        <el-button round>Use a credit card</el-button>
+      <div class="question">
+        <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you want to buy a precious thing online. What is the safest way to pay online?</p>
+        <div class="answer">
+        <el-button round @click="add" style="font-size: 18px">Use an online payment account connected to your own bank account.</el-button>
+        <el-button round style="font-size: 18px">Use a debit card</el-button>
+        <el-button round style="font-size: 18px">Use a credit card</el-button>
       </div>
     </div>
-
+    </div>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -67,5 +84,64 @@
 </script>
 
 <style scoped>
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
+  .whole {
+    background: url("../../assets/work3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+  }
+
+  .w {
+    width: 1200px;
+    margin: auto;
+
+  }
+
+  .header {
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 10px auto;
+  }
+
+  .score {
+    height: 150px;
+    color: white;
+    font-size: 25px;
+
+  }
+
+  .score ul li a {
+    display: block;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 80px;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  .answer {
+    padding-top: 30px;
+
+  }
 </style>

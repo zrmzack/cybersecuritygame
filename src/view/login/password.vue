@@ -90,8 +90,9 @@
       },
 
       jump() {
+        if (this.username == ''&&this.pwd1!=this.pwd2&&this.pwd1.length<8) {
 
-        console.log(this.username)
+        }
         this.$router.push({
           path: "/lunchTime",
           query: {

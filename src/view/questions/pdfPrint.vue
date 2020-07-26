@@ -1,18 +1,36 @@
 <template>
-  <div>  <h1>
-    Username:{{username}}
-    Position:{{position}}
-    Money:{{money}}
-    Cybersecurity
-  </h1>
+  <div class="whole">
+    <div class="header w">
+      <h1>
+        Cybersecurity
+      </h1>
+    </div>
+    <div class="w">
+      <div class="score">
+        <ur>
+          <li>
+            <a> Username:{{username}}</a></li>
+          <li>
+            <a> Position:{{position}}</a>
+          </li>
+          <li>
+            <a> Money:{{money}}</a>
+          </li>
+
+
+        </ur>
+
+      </div>
 
   <div class="form-wrapper">
-
-    <div>
-      <p>After you print a vital pdf in public computer, how to deal with the pdf in the computer?</p>
-      <el-button round>Put it in the computer,maybe you need print it next time</el-button>
-      <el-button round @click="add">move to trash bin and delete it</el-button>
+    <div class="question">
+      <p style="border-style: solid ;font-size: 30px ;background-color: white">After you print a vital pdf in public computer, how to deal with the pdf in the computer?</p>
+      <div class="answer">
+      <el-button round style="font-size: 18px">Put it in the computer,maybe you need print it next time</el-button>
+      <el-button round @click="add" style="font-size: 18px">move to trash bin and delete it</el-button>
     </div>
+  </div>
+  </div>
   </div>
   </div>
 
@@ -64,5 +82,64 @@
 </script>
 
 <style scoped>
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
+  .whole {
+    background: url("../../assets/work5.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+  }
+
+  .w {
+    width: 1200px;
+    margin: auto;
+
+  }
+
+  .header {
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 10px auto;
+  }
+
+  .score {
+    height: 150px;
+    color: white;
+    font-size: 25px;
+
+  }
+
+  .score ul li a {
+    display: block;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 80px;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  .answer {
+    padding-top: 30px;
+
+  }
 </style>

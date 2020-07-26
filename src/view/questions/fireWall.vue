@@ -1,23 +1,41 @@
 <template>
-  <div><h1>
-    Username:{{username}}
-    Position:{{position}}
-    Money:{{money}}
-    Cybersecurity
-  </h1>
+  <div class="whole">
+    <div class="header w">
+      <h1>
+        Cybersecurity
+      </h1>
+    </div>
+    <div class="w">
+      <div class="score">
+        <ur>
+          <li>
+            <a> Username:{{username}}</a></li>
+          <li>
+            <a> Position:{{position}}</a>
+          </li>
+          <li>
+            <a> Money:{{money}}</a>
+          </li>
 
 
-    <div class="form-wrapper">
+        </ur>
 
-      <div>
-        <p>When you transfer data to your team members, your computer alert you need to update the firewall. What should
+      </div>
+
+
+
+      <div class="form-wrapper">
+        <div class="question">
+        <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data to your team members, your computer alert you need to update the firewall. What should
           you do?</p>
-        <el-button round @click="add">stop transferring data temporyly, and update the firewall</el-button>
-        <el-button round>ignore it</el-button>
-        <el-button round @click="add">after you finish transferring data, update the firewall immediately.</el-button>
+          <div class="answer">
+        <el-button round @click="add"  style="font-size: 18px">stop transferring data temporyly, and update the firewall</el-button>
+        <el-button round style="font-size: 18px">ignore it</el-button>
+        <el-button round @click="add" style="font-size: 18px">after you finish transferring data, update the firewall immediately.</el-button>
       </div>
     </div>
-
+      </div>
+    </div>
   </div>
 
 </template>
@@ -70,5 +88,64 @@
 </script>
 
 <style scoped>
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
+  .whole {
+    background: url("../../assets/work2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+  }
+
+  .w {
+    width: 1200px;
+    margin: auto;
+
+  }
+
+  .header {
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 10px auto;
+  }
+
+  .score {
+    height: 150px;
+    color: white;
+    font-size: 25px;
+
+  }
+
+  .score ul li a {
+    display: block;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 80px;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .score ul li {
+    float: left;
+    margin: 0 20px;
+  }
+
+  .answer {
+    padding-top: 30px;
+
+  }
 </style>
