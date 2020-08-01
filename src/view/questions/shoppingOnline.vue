@@ -7,33 +7,30 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
-
-
-        </ur>
-
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
       </div>
 
 
-
-    <div class="form-wrapper">
-      <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you want to buy a precious thing online. What is the safest way to pay online?</p>
-        <div class="answer">
-        <el-button round @click="add" style="font-size: 18px">Use an online payment account connected to your own bank account.</el-button>
-        <el-button round style="font-size: 18px">Use a debit card</el-button>
-        <el-button round style="font-size: 18px">Use a credit card</el-button>
+      <div class="form-wrapper">
+        <div class="question">
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you want to buy a precious
+            thing online. What is the safest way to pay online?</p>
+          <div class="answer">
+            <el-button round @click="add" style="font-size: 18px">Use an online payment account connected to your own
+              bank account.
+            </el-button>
+            <el-button round style="font-size: 18px">Use a debit card</el-button>
+            <el-button round style="font-size: 18px">Use a credit card</el-button>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </div>
   </div>
 </template>
@@ -63,7 +60,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },

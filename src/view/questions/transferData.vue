@@ -7,32 +7,30 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
-
-
-        </ur>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
-    <div class="form-wrapper">
-      <div class="question">
+      <div class="form-wrapper">
+        <div class="question">
 
-        <p style="border-style: solid ;font-size: 30px ;background-color: white" >When you transfer data, you want to go washing room. What should you do?</p>
-        <div class="answer">
-        <el-button round style="font-size: 18px">Go toilet directly, let transfer data automatically</el-button>
-        <el-button round @click="add" style="font-size: 18px">Stop transferring data and lock your computer</el-button>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data, you want to
+            go washing room. What should you do?</p>
+          <div class="answer">
+            <el-button round style="font-size: 18px">Go toilet directly, let transfer data automatically</el-button>
+            <el-button round @click="add" style="font-size: 18px">Stop transferring data and lock your computer
+            </el-button>
+          </div>
+        </div>
+
       </div>
     </div>
-
-  </div>
-  </div>
   </div>
 
 </template>
@@ -63,7 +61,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },

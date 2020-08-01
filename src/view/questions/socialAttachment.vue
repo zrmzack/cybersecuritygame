@@ -7,7 +7,6 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
           <li>
             <a> Username:{{username}}</a></li>
           <li>
@@ -16,9 +15,6 @@
           <li>
             <a> Money:{{money}}</a>
           </li>
-
-
-        </ur>
 
       </div>
 

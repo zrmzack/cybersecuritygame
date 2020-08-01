@@ -7,34 +7,31 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
-
-
-        </ur>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
 
 
-    <div class="form-wrapper">
-      <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">Come to another city for business, your workmate will talk some company decisions with you in public place.
-          What should you do?</p>
-        <div class="answer">
-        <el-button round style="font-size: 18px">Keep talking with your workmate</el-button>
-        <el-button round style="font-size: 18px">ignore your workmate</el-button>
-        <el-button round @click="add" style="font-size: 18px">Tell your workmate to stop this topic</el-button>
+      <div class="form-wrapper">
+        <div class="question">
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">Come to another city for business,
+            your workmate will talk some company decisions with you in public place.
+            What should you do?</p>
+          <div class="answer">
+            <el-button round style="font-size: 18px">Keep talking with your workmate</el-button>
+            <el-button round style="font-size: 18px">ignore your workmate</el-button>
+            <el-button round @click="add" style="font-size: 18px">Tell your workmate to stop this topic</el-button>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -61,7 +58,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },

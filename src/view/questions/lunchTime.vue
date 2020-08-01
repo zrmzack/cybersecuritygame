@@ -7,24 +7,21 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
-
-        </ur>
 
       </div>
       <div class="form-wrapper">
 
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white" >Workmate invite you
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">Workmate invite you
             to have lunch together, but some important documents in your table
             need to be sorted.
             What should you do?</p>
@@ -33,7 +30,8 @@
               can have lunch with him next
               time.
             </el-button>
-            <el-button round style="font-size: 18px" @click="jump">B. go for lunch with your workmate together</el-button>
+            <el-button round style="font-size: 18px" @click="jump">B. go for lunch with your workmate together
+            </el-button>
           </div>
         </div>
       </div>
@@ -67,13 +65,18 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
-      jump: function(){
+      jump: function () {
         this.$router.push({
-          path:'/lunchTimeWrong'
+          path: '/lunchTimeWrong',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
         })
       },
       getPosition: function () {
@@ -83,7 +86,7 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
-        }else {
+        } else {
           this.position = "expert"
         }
       }

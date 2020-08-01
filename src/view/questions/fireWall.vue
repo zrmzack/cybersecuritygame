@@ -7,33 +7,34 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
-
-        </ur>
 
       </div>
-
 
 
       <div class="form-wrapper">
         <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data to your team members, your computer alert you need to update the firewall. What should
-          you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data to your team
+            members, your computer alert you need to update the firewall. What should
+            you do?</p>
           <div class="answer">
-        <el-button round @click="add"  style="font-size: 18px">stop transferring data temporyly, and update the firewall</el-button>
-        <el-button round style="font-size: 18px">ignore it</el-button>
-        <el-button round @click="add" style="font-size: 18px">after you finish transferring data, update the firewall immediately.</el-button>
-      </div>
-    </div>
+            <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
+              firewall
+            </el-button>
+            <el-button round style="font-size: 18px">ignore it</el-button>
+            <el-button round @click="add" style="font-size: 18px">after you finish transferring data, update the
+              firewall immediately.
+            </el-button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +67,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
@@ -78,7 +79,7 @@
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
         } else {
-          this.position="Development Manager"
+          this.position = "Development Manager"
         }
       }
     },

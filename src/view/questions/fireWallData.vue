@@ -7,35 +7,36 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
-
-
-        </ur>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
-    <div class="form-wrapper">
+      <div class="form-wrapper">
 
-      <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">Now, as you got a promotion, you are in a data department. The data is all very important. When you transfer
-          data to your team members, your
-          computer alert you need to update the
-          firewall immediately. What should
-          you do?</p>
-        <div class="answer">
-        <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the firewall</el-button>
-        <el-button round style="font-size: 18px">ignore it</el-button>
-        <el-button round style="font-size: 18px">after you finish transferring data, update the firewall immediately.</el-button>
+        <div class="question">
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">Now, as you got a promotion, you are
+            in a data department. The data is all very important. When you transfer
+            data to your team members, your
+            computer alert you need to update the
+            firewall immediately. What should
+            you do?</p>
+          <div class="answer">
+            <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
+              firewall
+            </el-button>
+            <el-button round style="font-size: 18px">ignore it</el-button>
+            <el-button round style="font-size: 18px">after you finish transferring data, update the firewall
+              immediately.
+            </el-button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     </div>
   </div>
 </template>
@@ -65,7 +66,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
