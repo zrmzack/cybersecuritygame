@@ -25,17 +25,20 @@
 
       <div class="form-wrapper">
         <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">Your workmate sends you an email, it contains some wrong spellings. And it tells you that your company email
-          will
-          expire in a week, please click this link to login to your account. What should you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">Your workmate sends you an email, it
+            contains some wrong spellings. And it tells you that your company email
+            will
+            expire in a week, please click this link to login to your account. What should you do?</p>
           <div class="answer">
-          <el-button round style="font-size: 18px">CLick the link</el-button>
-        <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
-        <el-button round @click="add" style="font-size: 18px">hover over the link to see if it goes to an authentic site</el-button>
-      </div>
-    </div>
+            <el-button round style="font-size: 18px">CLick the link</el-button>
+            <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
+            <el-button round @click="add" style="font-size: 18px">hover over the link to see if it goes to an authentic
+              site
+            </el-button>
+          </div>
+        </div>
 
-  </div>
+      </div>
     </div>
   </div>
 </template>
@@ -48,6 +51,7 @@
       console.log(this.$route.query.money)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
+      this.position = this.$route.query.position
     },
     data() {
       return {
@@ -64,6 +68,7 @@
           query: {
             username: this.username,
             money: this.money,
+            position: this.position
           }
         })
       }, getPosition: function () {

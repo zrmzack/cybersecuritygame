@@ -7,7 +7,6 @@
     </div>
     <div class="w">
       <div class="score">
-        <ur>
           <li>
             <a> Username:{{username}}</a></li>
           <li>
@@ -16,9 +15,6 @@
           <li>
             <a> Money:{{money}}</a>
           </li>
-
-
-        </ur>
 
       </div>
 
@@ -44,10 +40,9 @@
   export default {
     name: "wifiAttack",
     created() {
-      console.log(this.$route.query.username)
-      console.log(this.$route.query.money)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
+      this.position = this.$route.query.position
     },
     data() {
       return {
@@ -64,6 +59,7 @@
           query: {
             username: this.username,
             money: this.money,
+            position:this.position
           }
         })
       },

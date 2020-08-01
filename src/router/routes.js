@@ -18,6 +18,8 @@ import socialFreshMan from "../view/questions/socialFreshMan";
 import outsideBusinessTalk from "../view/questions/outsideBusinessTalk";
 import fireWallData from "../view/questions/fireWallData";
 import windowPopup from "../view/questions/windowPopup";
+import aliPayWrong from "../view/questions/aliPayWrong";
+import lunchTimeWrong from "../view/questions/lunchTimeWrong";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
   {path: "/", component: index},
@@ -40,4 +42,6 @@ export default [
   {path: "/socialAttachment", component: socialAttachment},
   {path: "/fireWallData", component: fireWallData},
   {path: "/windowPopup", component: windowPopup},
+  {path: "/lunchTimeWrong", component: lunchTimeWrong},
+  {path: "/aliPayWrong", component: aliPayWrong}
 ]

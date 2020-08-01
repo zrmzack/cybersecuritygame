@@ -45,6 +45,7 @@
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
+      this.position = this.$route.query.position
     },
     data() {
       return {
@@ -61,6 +62,7 @@
           query: {
             username: this.username,
             money: this.money,
+            position:this.position
           }
         })
       },

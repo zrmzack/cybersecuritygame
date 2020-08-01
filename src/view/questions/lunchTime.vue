@@ -33,7 +33,7 @@
               can have lunch with him next
               time.
             </el-button>
-            <el-button round style="font-size: 18px">B. go for lunch with your workmate together</el-button>
+            <el-button round style="font-size: 18px" @click="jump">B. go for lunch with your workmate together</el-button>
           </div>
         </div>
       </div>
@@ -49,6 +49,7 @@
     created() {
       console.log(this.$route.query.username)
       this.username = this.$route.query.username
+
     },
 
     data() {
@@ -66,7 +67,13 @@
           query: {
             username: this.username,
             money: this.money,
+            position:this.position
           }
+        })
+      },
+      jump: function(){
+        this.$router.push({
+          path:'/lunchTimeWrong'
         })
       },
       getPosition: function () {
@@ -76,6 +83,8 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
+        }else {
+          this.position = "expert"
         }
       }
     },
