@@ -21,7 +21,7 @@
       <div class="form-wrapper">
 
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">When you browsing a web, a pop-up
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">When you watching a movie, a pop-up
             warns you that a virus affect your computer. It give you a tip that you
             need install his software to delete the virus. What should you do?</p>
           <div class="answer">

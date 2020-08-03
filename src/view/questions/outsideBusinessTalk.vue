@@ -21,8 +21,9 @@
 
       <div class="form-wrapper">
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">Come to another city for business,
-            your workmate will talk some company decisions with you in public place.
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">While in another city for business,
+            your team make a big profit from the collaborlation,
+            and your workmate will talk some details about company decisions with you in public place.
             What should you do?</p>
           <div class="answer">
             <el-button round style="font-size: 18px">Keep talking with your workmate</el-button>

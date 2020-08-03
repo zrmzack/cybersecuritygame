@@ -21,7 +21,7 @@
 
   <div class="form-wrapper">
     <div class="question">
-      <p style="border-style: solid ;font-size: 30px ;background-color: white">After you print a vital pdf in public computer, how to deal with the pdf in the computer?</p>
+      <p style="border-style: solid ;font-size: 30px ;background-color: white">After you print a report pdf in public computer, how to deal with the pdf in the computer?</p>
       <div class="answer">
       <el-button round style="font-size: 18px">Put it in the computer,maybe you need print it next time</el-button>
       <el-button round @click="add" style="font-size: 18px">move to trash bin and delete it</el-button>

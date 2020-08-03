@@ -4,7 +4,7 @@
     <div class="introduction">
 
 
-      You will encounter many work scenarios!<br> Avoid some cyberattacks!<br> Try to get promotion and earn much money!
+      You will encounter many work scenarios!<br> Avoid some cyberattacks!<br> Try to get promotion and earn much money! Buy what you want!!
 
     </div>
     <el-button type="primary" class="login" @click="gotologin()">Login</el-button>

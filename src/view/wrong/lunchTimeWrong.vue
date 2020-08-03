@@ -1,9 +1,10 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-    <h1>
-      Mixing those files together, some vital files may miss, maybe your personal data will leak.
-    </h1>
+      <h1>
+        Mixing those files together, some vital files may miss, maybe your personal data will leak. But at the mean
+        time, you have a happy relationship with the workmate.
+      </h1>
     </div>
     <el-button type="info" round @click="wrong" class="next"> Next</el-button>
   </div>
@@ -18,7 +19,7 @@
       console.log(this.$route.query.username)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
-      this.position=this.$route.query.position
+      this.position = this.$route.query.position
     },
 
     data() {
@@ -35,7 +36,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
@@ -75,10 +76,7 @@
     bottom: 0;
     font-size: 28px;
     color: white;
-    line-height:60px;
-
-
-
+    line-height: 60px;
 
 
   }
@@ -91,6 +89,7 @@
     width: 150px;
     font-size: 30px;
   }
+
   .center-in-center {
     background-image: url('../../assets/bk1.jpg');
     background-size: 100% 100%;

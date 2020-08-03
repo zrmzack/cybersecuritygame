@@ -7,24 +7,23 @@
     </div>
     <div class="w">
       <div class="score">
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
 
 
       <div class="form-wrapper">
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">Your workmate sends you an email, it
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">One day,your workmate sends you an email, it
             contains some wrong spellings. And it tells you that your company email
-            will
-            expire in a week, please click this link to login to your account. What should you do?</p>
+            will expire in a week, please click this link to login to your account. What should you do?</p>
           <div class="answer">
             <el-button round style="font-size: 18px">CLick the link</el-button>
             <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>

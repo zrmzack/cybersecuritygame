@@ -7,32 +7,35 @@
     </div>
     <div class="w">
       <div class="score">
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
 
       </div>
-
 
 
       <div class="form-wrapper">
         <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you got a call, he described himself as a new employee. He said he could not log into the system. He
-          wanted you could help him to login to system. What should you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you got a call, he described
+            himself as a new employee. He said he could not log into the system. He
+            wanted you could help him to login to system. What should you do?</p>
           <div class="answer">
-          <el-button round style="font-size: 18px">Ignore him</el-button>
-        <el-button round style="font-size: 18px"Help him to login the system</el-button>
-        <el-button round @click="add" style="font-size: 18px">Check his employment information, consider whether to help him</el-button>
+            <el-button round style="font-size: 18px">Ignore him</el-button>
+            <el-button round style="font-size: 18px"> Help him to login the system.
+            </el-button>
+            <el-button round @click="add" style="font-size: 18px">Check his employment information, consider whether to
+              help him
+            </el-button>
+          </div>
+        </div>
       </div>
     </div>
-      </div>
-  </div>
   </div>
 </template>
 
@@ -59,7 +62,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },

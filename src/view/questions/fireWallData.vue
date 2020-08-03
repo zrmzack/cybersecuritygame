@@ -20,10 +20,9 @@
       <div class="form-wrapper">
 
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">Now, as you got a promotion, you are
-            in a data department. The data is all very important. When you transfer
-            data to your team members, your
-            computer alert you need to update the
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">You are
+            in a data department. As virus have not attack your system, at the meaning, you need send some files to your
+            partners. While the computer alert you need to update the
             firewall immediately. What should
             you do?</p>
           <div class="answer">

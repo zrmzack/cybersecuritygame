@@ -23,8 +23,7 @@
       <div class="form-wrapper">
         <div class="question">
           <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data to your team
-            members, your computer alert you need to update the firewall. What should
-            you do?</p>
+            members, your computer alert you need to update the firewall. What should you do?</p>
           <div class="answer">
             <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
               firewall
