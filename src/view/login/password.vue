@@ -90,16 +90,17 @@
       },
 
       jump() {
-        if (this.username == ''&&this.pwd1!=this.pwd2&&this.pwd1.length<8) {
-
+        if (this.usernameAlert == false && this.nicePasswordAlert == true) {
+          this.$router.push({
+            path: "/WelcomeProcess",
+            query: {
+              username: this.username,
+            },
+          })
         }
-        this.$router.push({
-          path: "/WelcomeProcess",
-          query: {
-            username: this.username,
-          },
-
-        })
+        else {
+          console.log("wenti")
+        }
       }
 
     }
