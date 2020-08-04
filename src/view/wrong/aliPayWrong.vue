@@ -28,23 +28,12 @@
     },
     methods: {
       add: function () {
-        this.money += 10
         this.$router.push({
-          path: '/emailAttack',
+          path: '/alipayToEmailAttack',
           query: {
             username: this.username,
             money: this.money,
             position: this.position,
-          }
-        })
-      },
-      wrong: function () {
-        this.$router.push({
-          path: '/emailAttack',
-          query: {
-            username: this.username,
-            money: this.money,
-            position: this.position
           }
         })
       },

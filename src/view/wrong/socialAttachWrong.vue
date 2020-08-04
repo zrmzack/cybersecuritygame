@@ -23,9 +23,8 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
-          path: '/fireWallData',
+          path: '/socialAttachTofirewalldata',
           query: {
             username: this.username,
             money: this.money,

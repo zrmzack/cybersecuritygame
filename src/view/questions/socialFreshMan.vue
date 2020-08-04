@@ -66,6 +66,16 @@
           }
         })
       },
+      next: function () {
+        this.$router.push({
+          path: '/socialFreshMantopromotionTwo',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
       getPosition: function () {
         if (this.money < 40) {
           this.position = "Beginner Programmer"

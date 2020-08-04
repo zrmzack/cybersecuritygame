@@ -61,8 +61,18 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/socialFreshMan',
+          path: '/firewallToSocial',
 
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/fireWallWrong',
           query: {
             username: this.username,
             money: this.money,

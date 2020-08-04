@@ -38,7 +38,7 @@
         console.log(this.pwd)
         this.money += 10;
         this.$router.push({
-          path: '/outsideBusinessTalk',
+          path: '/projectTwo',
           query: {
             username: this.username,
             money: this.money,

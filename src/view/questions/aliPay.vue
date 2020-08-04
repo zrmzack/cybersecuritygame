@@ -58,8 +58,18 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/emailAttack',
+          path: '/alipayToEmailAttack',
 
+          query: {
+            username: this.username,
+            money: this.money,
+            position:this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/aliPayWrong',
           query: {
             username: this.username,
             money: this.money,

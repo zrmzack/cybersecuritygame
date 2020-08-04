@@ -7,30 +7,31 @@
     </div>
     <div class="w">
       <div class="score">
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
 
 
-    <div class="form-wrapper">
+      <div class="form-wrapper">
 
-      <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">Your boss sends you an email, it contains an attachment, the title of the attachment is 2021 Recruitment
-          Plan. What should you do about this attachment.</p>
-        <div class="answer">
-        <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
-        <el-button round style="font-size: 18px">download the Recruitment Plan</el-button>
+        <div class="question">
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">Your boss sends you an email, it
+            contains an attachment, the title of the attachment is 2021 Recruitment
+            Plan. What should you do about this attachment.</p>
+          <div class="answer">
+            <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
+            <el-button round style="font-size: 18px">download the Recruitment Plan</el-button>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -53,11 +54,21 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/fireWallData',
+          path: '/socialAttachTofirewalldata',
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/socialAttachWrong',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
           }
         })
       },

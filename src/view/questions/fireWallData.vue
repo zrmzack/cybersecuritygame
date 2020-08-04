@@ -61,7 +61,18 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/windowPopup',
+          path: '/fireDataToWindowpop',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/firewalldataWrong',
           query: {
             username: this.username,
             money: this.money,

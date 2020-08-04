@@ -1,11 +1,11 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h1>
+      <h2>
         Congrationlations, you did a nice presetation. now you are Intermediate Programmer. Next Chapter is coming. You
         will encounter more things. Also you have chance to buy car.
         Also, be careful about cybersecurity.
-      </h1>
+      </h2>
     </div>
     <el-button type="info" round @click="next" class="next"> Next</el-button>
   </div>
@@ -38,6 +38,15 @@
             position: this.position
           }
         })
+      },
+      getPosition: function () {
+        if (this.money < 40) {
+          this.position = "Beginner Programmer"
+        } else if (this.money >= 40 && this.money < 90) {
+          this.position = "Intermediate Programmer"
+        } else if (this.money >= 90 && this.money < 140) {
+          this.position = "Senior Programmer"
+        }
       }
     },
     mounted: function () {

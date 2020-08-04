@@ -38,7 +38,7 @@
 
 <script>
   export default {
-    name: "outsideBusiness",
+    name: "outsideBusinessTalk",
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
@@ -55,7 +55,17 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/socialAttachment',
+          path: '/businessTosocialAttach',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/outsideBusinessWrong',
           query: {
             username: this.username,
             money: this.money,

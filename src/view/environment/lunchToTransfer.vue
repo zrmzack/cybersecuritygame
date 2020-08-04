@@ -2,6 +2,7 @@
   <div>
     Keeping work for a long time, you have finished a lot of work! And your team leader tell you that you need to send
     a report to him. That may affect your performance(Promotion).
+    <button @click="add">next</button>
   </div>
 </template>
 
@@ -23,7 +24,6 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
           path: '/transferData',
           query: {

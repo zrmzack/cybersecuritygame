@@ -20,6 +20,9 @@ import windowPopup from "../view/questions/windowPopup";
 import WelcomeProcess from "../view/login/WelcomeProcess";
 import trainStaffs from "../view/environment/trainStaffs";
 import lastReport from "../view/environment/lastReport";
+import promotion from "../view/environment/promotion";
+import lunchTimeWrong from "../view/wrong/lunchTimeWrong";
+import lunchToTransfer from "../view/environment/lunchToTransfer";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
   {path: "/", component: index},
@@ -45,5 +48,8 @@ export default [
   {path: "/trainStaffs", component: trainStaffs},
   {path: "/trainStaffs", component: trainStaffs},
   {path: "/lastReport", component: lastReport},
+  {path: "/promotion", component: promotion},
+  {path: "/lunchTimeWrong", component: lunchTimeWrong},
+  {path: "/lunchToTransfer", component: lunchToTransfer},
 
 ]

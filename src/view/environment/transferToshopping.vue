@@ -5,7 +5,6 @@
   export default {
     name: "transferToshopping",
     created() {
-      console.log(this.$route.query.username)
       this.username = this.$route.query.username
 
     },
@@ -18,7 +17,6 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
           path: '/shoppingOnline',
           query: {

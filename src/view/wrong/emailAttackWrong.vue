@@ -21,7 +21,6 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
           path: '/fireWallData',
           query: {

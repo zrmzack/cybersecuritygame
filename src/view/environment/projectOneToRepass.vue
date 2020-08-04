@@ -6,12 +6,7 @@
 
 <script>
   export default {
-    name: "projectOne"
-  }
-</script>
-<script>
-  export default {
-    name: "businessToSocailAttach",
+    name: "projectOne",
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
@@ -26,9 +21,8 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
-          path: '/fireWallData',
+          path: '/repassword',
           query: {
             username: this.username,
             money: this.money,
@@ -43,8 +37,6 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
-        } else {
-          this.position = "Development Manager"
         }
       }
     }, mounted: function () {

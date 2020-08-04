@@ -59,14 +59,25 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/fireWall',
+          path: '/emailToFireWall',
           query: {
             username: this.username,
             money: this.money,
             position: this.position
           }
         })
-      }, getPosition: function () {
+      },
+      next: function () {
+        this.$router.push({
+          path: '/emailAttackWrong',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      getPosition: function () {
         if (this.money < 40) {
           this.position = "Beginner Programmer"
         } else if (this.money >= 40 && this.money < 90) {
