@@ -25,14 +25,14 @@
     data() {
       return {
         username: '',
-        position: 'test',
+        position:çç 'test',
         money: 0,
       }
     },
     methods: {
       wrong: function () {
         this.$router.push({
-          path: '/transferData',
+          path: '/lunchToTransfer',
           query: {
             username: this.username,
             money: this.money,

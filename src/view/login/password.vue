@@ -94,7 +94,7 @@
 
         }
         this.$router.push({
-          path: "/lunchTime",
+          path: "/WelcomeProcess",
           query: {
             username: this.username,
           },

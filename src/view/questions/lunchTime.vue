@@ -21,7 +21,7 @@
       <div class="form-wrapper">
 
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">The  first day, Workmate invite you
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">The first day, Workmate invite you
             to have lunch together, but some important documents in your table
             need to be sorted.
             What should you do?</p>
@@ -61,7 +61,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/transferData',
+          path: '/lunchToTransfer',
           query: {
             username: this.username,
             money: this.money,
