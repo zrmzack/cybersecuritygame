@@ -26,8 +26,8 @@
             himself as a new employee. He said he could not log into the system. He
             wanted you could help him to login to system. What should you do?</p>
           <div class="answer">
-            <el-button round style="font-size: 18px">Ignore him</el-button>
-            <el-button round style="font-size: 18px"> Help him to login the system.
+            <el-button round @click="add" style="font-size: 18px">Ignore him</el-button>
+            <el-button round @click="next" style="font-size: 18px"> Help him to login the system.
             </el-button>
             <el-button round @click="add" style="font-size: 18px">Check his employment information, consider whether to
               help him
@@ -58,7 +58,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/repassword',
+          path: '/socialFreshMantopromotionTwo',
           query: {
             username: this.username,
             money: this.money,
@@ -68,7 +68,7 @@
       },
       next: function () {
         this.$router.push({
-          path: '/socialFreshMantopromotionTwo',
+          path: '/socailFreshManWrong',
           query: {
             username: this.username,
             money: this.money,

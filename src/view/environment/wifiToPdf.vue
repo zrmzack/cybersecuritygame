@@ -1,6 +1,7 @@
 <template>
   <div>
     As you did a nice work those days, you need to print a pdf for your report and make a presentation!
+    <button @click="add">next</button>
   </div>
 </template>
 
@@ -23,7 +24,7 @@
     methods: {
       add: function () {
         this.$router.push({
-          path: '/fireWallData',
+          path: '/pdfPrint',
           query: {
             username: this.username,
             money: this.money,

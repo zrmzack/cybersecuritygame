@@ -2,6 +2,7 @@
   <div>
     At the night, in the hotel, you receive an email from the "boss". It seems the attachment contains the Recruitment
     Plan.
+    <button @click="add">next</button>
   </div>
 </template>
 

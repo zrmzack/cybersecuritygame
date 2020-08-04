@@ -23,6 +23,33 @@ import lastReport from "../view/environment/lastReport";
 import promotion from "../view/environment/promotion";
 import lunchTimeWrong from "../view/wrong/lunchTimeWrong";
 import lunchToTransfer from "../view/environment/lunchToTransfer";
+import transferDataWrong from "../view/wrong/transferDataWrong";
+import transferToshopping from "../view/environment/transferToshopping";
+import shoppingTOWifi from "../view/environment/shoppingTOWifi";
+import onlineShoppingWrong from "../view/wrong/onlineShoppingWrong";
+import wifiAttackWrong from "../view/wrong/wifiAttackWrong";
+import wifiToPdf from "../view/environment/wifiToPdf";
+import pdfPrintWrong from "../view/wrong/pdfPrintWrong";
+import promotion1 from "../view/environment/promotion1";
+import Alipaybefore from "../view/environment/Alipaybefore";
+import aliPayWrong from "../view/wrong/aliPayWrong";
+import alipayToEmailAttack from "../view/environment/alipayToEmailAttack";
+import emailAttackWrong from "../view/wrong/emailAttackWrong";
+import emailToFireWall from "../view/environment/emailToFireWall";
+import firewalldataWrong from "../view/wrong/firewalldataWrong";
+import fireWallWrong from "../view/wrong/fireWallWrong";
+import firewallToSocial from "../view/environment/firewallToSocial";
+import socialFreshMantopromotionTwo from "../view/environment/socialFreshMantopromotionTwo";
+import socialAttachTofirewalldata from "../view/environment/socialAttachTofirewalldata";
+import socialAttachWrong from "../view/wrong/socialAttachWrong";
+import socailFreshManWrong from "../view/wrong/socailFreshManWrong";
+import projectOneToRepass from "../view/environment/projectOneToRepass";
+import projectTwo from "../view/environment/projectTwo";
+import outsideBusinessWrong from "../view/wrong/outsideBusinessWrong";
+import businessToSocailAttach from "../view/environment/businessToSocailAttach";
+import fireDataToWindowpop from "../view/environment/fireDataToWindowpop";
+import windowsUpWrong from "../view/wrong/windowsUpWrong";
+import Finish from "../view/environment/Finish";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
   {path: "/", component: index},
@@ -51,5 +78,31 @@ export default [
   {path: "/promotion", component: promotion},
   {path: "/lunchTimeWrong", component: lunchTimeWrong},
   {path: "/lunchToTransfer", component: lunchToTransfer},
-
+  {path: "/transferDataWrong", component: transferDataWrong},
+  {path: "/transferToshopping", component: transferToshopping},
+  {path: "/shoppingTOWifi", component: shoppingTOWifi},
+  {path: "/onlineShoppingWrong", component: onlineShoppingWrong},
+  {path: "/wifiAttackWrong", component: wifiAttackWrong},
+  {path: "/wifiToPdf", component: wifiToPdf},
+  {path: "/pdfPrintWrong", component: pdfPrintWrong},
+  {path: "/promotion1", component: promotion1},
+  {path: "/Alipaybefore", component: Alipaybefore},
+  {path: "/aliPayWrong", component: aliPayWrong},
+  {path: "/alipayToEmailAttack", component: alipayToEmailAttack},
+  {path: "/emailAttackWrong", component: emailAttackWrong},
+  {path: "/emailToFireWall", component: emailToFireWall},
+  {path: "/fireWallWrong", component: fireWallWrong},
+  {path: "/firewalldataWrong", component: firewalldataWrong},
+  {path: "/firewallToSocial", component: firewallToSocial},
+  {path: "/socailFreshManWrong", component: socailFreshManWrong},
+  {path: "/socialFreshMantopromotionTwo", component: socialFreshMantopromotionTwo},
+  {path: "/socialAttachTofirewalldata", component: socialAttachTofirewalldata},
+  {path: "/socialAttachWrong", component: socialAttachWrong},
+  {path: "/projectTwo", component: projectTwo},
+  {path: "/projectOneToRepass", component: projectOneToRepass},
+  {path: "/outsideBusinessWrong", component: outsideBusinessWrong},
+  {path: "/businessToSocailAttach", component: businessToSocailAttach},
+  {path: "/fireDataToWindowpop", component: fireDataToWindowpop},
+  {path: "/windowsUpWrong", component: windowsUpWrong},
+  {path: "/Finish", component: Finish},
 ]

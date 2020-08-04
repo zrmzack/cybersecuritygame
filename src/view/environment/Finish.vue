@@ -1,5 +1,6 @@
 <template>
-  Congratulations, you have met some
+
+  <div>Congratulations, you have met some</div>
 </template>
 
 <script>

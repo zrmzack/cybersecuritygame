@@ -1,5 +1,7 @@
 <template>
-  <div>after you finish a week work, you want to buy something for yourself.</div>
+  <div>after you finish a week work, you want to buy something for yourself.
+    <button @click="add">next</button>
+  </div>
 </template>
 <script>
   export default {

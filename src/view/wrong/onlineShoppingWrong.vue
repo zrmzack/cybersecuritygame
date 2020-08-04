@@ -2,6 +2,7 @@
   <div>
     Using debit card or credit card will make you data in cookies. If some Attackers cut those cookies, they may get
     your bank information. But luckily, you buy the nice cloth successfully.
+    <button @click="add">next</button>
   </div>
 </template>
 

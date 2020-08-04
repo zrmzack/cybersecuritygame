@@ -1,5 +1,6 @@
 <template>
-  <div>Congratulations, you are now middle programmer, you have the right to buy car now.</div>
+  <div>Congratulations, you are now middle programmer, you have the right to buy car now.
+    <button @click="next">next</button></div>
 </template>
 
 <script>

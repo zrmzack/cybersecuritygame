@@ -12,6 +12,7 @@
         <strong>Input your password to protect your vital files.</strong>
         <input placeholder="input your password" v-model="pwd" @keyup="add"></input>
       </div>
+      <button>next</button>
     </div>
   </div>
 </template>

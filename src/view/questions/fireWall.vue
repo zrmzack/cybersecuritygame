@@ -28,7 +28,7 @@
             <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
               firewall
             </el-button>
-            <el-button round style="font-size: 18px">ignore it</el-button>
+            <el-button round @click="next" style="font-size: 18px">ignore it</el-button>
             <el-button round @click="add" style="font-size: 18px">after you finish transferring data, update the
               firewall immediately.
             </el-button>
@@ -44,8 +44,6 @@
   export default {
     name: "fireWall",
     created() {
-      console.log(this.$route.query.username)
-      console.log(this.$route.query.money)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.position = this.$route.query.position

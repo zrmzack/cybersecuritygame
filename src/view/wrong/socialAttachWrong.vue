@@ -2,6 +2,7 @@
   <div>
     You make a big damage to the company, you lose much money too. While some virus also be automatically installed. As
     you have the vial data, do not forget to upload the firewall.
+    <button @click="add">next</button>
   </div>
 </template>
 

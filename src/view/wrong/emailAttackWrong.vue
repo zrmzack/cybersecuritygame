@@ -1,6 +1,7 @@
 <template>
   <div>
     Be careful about those emails, attackers would use social engineering to attack you!
+    <button @click="add">next</button>
   </div>
 </template>
 
@@ -22,7 +23,7 @@
     methods: {
       add: function () {
         this.$router.push({
-          path: '/fireWallData',
+          path: '/fireWall',
           query: {
             username: this.username,
             money: this.money,

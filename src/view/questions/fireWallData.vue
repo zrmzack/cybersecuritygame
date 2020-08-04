@@ -29,8 +29,9 @@
             <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
               firewall
             </el-button>
-            <el-button round style="font-size: 18px">ignore it</el-button>
-            <el-button round style="font-size: 18px">after you finish transferring data, update the firewall
+            <el-button round @click="next" style="font-size: 18px">ignore it</el-button>
+            <el-button round @click="next" style="font-size: 18px">after you finish transferring data, update the
+              firewall
               immediately.
             </el-button>
           </div>
@@ -70,7 +71,6 @@
         })
       },
       next: function () {
-        this.money += 10;
         this.$router.push({
           path: '/firewalldataWrong',
           query: {

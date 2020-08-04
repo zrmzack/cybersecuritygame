@@ -25,7 +25,7 @@
             contains some wrong spellings. And it tells you that your company email
             will expire in a week, please click this link to login to your account. What should you do?</p>
           <div class="answer">
-            <el-button round style="font-size: 18px">CLick the link</el-button>
+            <el-button round @click="next" style="font-size: 18px">CLick the link</el-button>
             <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
             <el-button round @click="add" style="font-size: 18px">hover over the link to see if it goes to an authentic
               site

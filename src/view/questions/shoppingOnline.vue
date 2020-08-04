@@ -26,8 +26,8 @@
             <el-button round @click="add" style="font-size: 18px">Use an online payment account connected to your own
               bank account.
             </el-button>
-            <el-button round style="font-size: 18px">Use a debit card</el-button>
-            <el-button round style="font-size: 18px">Use a credit card</el-button>
+            <el-button round style="font-size: 18px" @click="next">Use a debit card</el-button>
+            <el-button round style="font-size: 18px" @click="next">Use a credit card</el-button>
           </div>
         </div>
       </div>

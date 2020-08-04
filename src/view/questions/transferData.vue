@@ -23,7 +23,7 @@
           <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data, you want to
             go washing room. What should you do?</p>
           <div class="answer">
-            <el-button round style="font-size: 18px">Go toilet directly, let transfer data automatically</el-button>
+            <el-button round @click="next" style="font-size: 18px">Go toilet directly, let transfer data automatically</el-button>
             <el-button round @click="add" style="font-size: 18px">Stop transferring data and lock your computer
             </el-button>
           </div>

@@ -1,6 +1,7 @@
 <template>
   <div>
     Finish a big project, you have a short holiday. In the evening, you start watching a nice movie.
+    <button @click="add">next</button>
   </div>
 </template>
 

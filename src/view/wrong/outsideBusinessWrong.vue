@@ -1,6 +1,7 @@
 <template>
   <div>
     donot talk with any company information outside, or those data will be leaked.
+    <button @click="add">next</button>
   </div>
 </template>
 

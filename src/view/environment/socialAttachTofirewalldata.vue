@@ -1,6 +1,7 @@
 <template>
   <div>
     Some employee downloaded the recruit plane, The system was attacked. Many data were leaked.
+    <button @click="add">next</button>
   </div>
 </template>
 

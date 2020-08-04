@@ -1,6 +1,7 @@
 <template>
   <div>
     Some xss will be used in that way. If you click some unknown link, you private information may be sent to attackers.
+    <button @click="add">next</button>
   </div>
 </template>
 <script>
@@ -21,7 +22,7 @@
     methods: {
       add: function () {
         this.$router.push({
-          path: '/fireWallData',
+          path: '/Finish',
           query: {
             username: this.username,
             money: this.money,

@@ -26,8 +26,8 @@
             and your workmate will talk some details about company decisions with you in public place.
             What should you do?</p>
           <div class="answer">
-            <el-button round style="font-size: 18px">Keep talking with your workmate</el-button>
-            <el-button round style="font-size: 18px">ignore your workmate</el-button>
+            <el-button round @click="next" style="font-size: 18px">Keep talking with your workmate</el-button>
+            <el-button round @click="next" style="font-size: 18px">ignore your workmate</el-button>
             <el-button round @click="add" style="font-size: 18px">Tell your workmate to stop this topic</el-button>
           </div>
         </div>
@@ -55,7 +55,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/businessTosocialAttach',
+          path: '/businessToSocailAttach',
           query: {
             username: this.username,
             money: this.money,

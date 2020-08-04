@@ -7,32 +7,35 @@
     </div>
     <div class="w">
       <div class="score">
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
 
       </div>
 
 
-    <div class="form-wrapper">
-      <div class="question">
+      <div class="form-wrapper">
+        <div class="question">
 
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">You have a nice software, it can transfer money quickly and convinenty. How to protect your own data
-          safe?</p>
-        <div class="answer">
-        <el-button round style="font-size: 18px">Turn off all your app permissions</el-button>
-        <el-button round @click="add" style="font-size: 18px">Go through and turn off some permissions</el-button>
-        <el-button round style="font-size: 18px">To use the software convinently, enable all permissions</el-button>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">You have a nice software, it can
+            transfer money quickly and convinenty. How to protect your own data
+            safe?</p>
+          <div class="answer">
+            <el-button round @click="next" style="font-size: 18px">Turn off all your app permissions</el-button>
+            <el-button round @click="add" style="font-size: 18px">Go through and turn off some permissions</el-button>
+            <el-button round @click="next" style="font-size: 18px">To use the software convinently, enable all
+              permissions
+            </el-button>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
   </div>
 
 </template>
@@ -45,7 +48,7 @@
       console.log(this.$route.query.money)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
-      this.position=this.$route.query.position
+      this.position = this.$route.query.position
     },
     data() {
       return {
@@ -63,7 +66,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
@@ -73,7 +76,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },

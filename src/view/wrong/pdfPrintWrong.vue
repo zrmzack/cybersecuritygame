@@ -1,6 +1,7 @@
 <template>
   <div>
     you cannot put your any personal information in the public place. You may leak some vital information.
+    <button @click="add">next</button>
   </div>
 </template>
 

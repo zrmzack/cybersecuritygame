@@ -25,7 +25,7 @@
             warns you that a virus affect your computer. It give you a tip that you
             need install his software to delete the virus. What should you do?</p>
           <div class="answer">
-            <el-button round style="font-size: 18px">Click the tip, and install the required software to deal with the
+            <el-button round @click="next" style="font-size: 18px">Click the tip, and install the required software to deal with the
               software.
             </el-button>
             <el-button round @click="add" style="font-size: 18px">Close the browser</el-button>
@@ -67,6 +67,17 @@
           }
         })
       },
+      next: function () {
+        this.money += 10;
+        this.$router.push({
+          path: '/windowsUpWrong',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
       getPosition: function () {
         if (this.money < 40) {
           this.position = "Beginner Programmer"
@@ -74,8 +85,6 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
-        } else {
-          this.position = "Development Manager"
         }
       }
     }

@@ -1,6 +1,7 @@
 <template>
   <div>
     A happy weekend is coming. you want to buy a nice cloth online.
+    <button @click="add">next</button>
   </div>
 </template>
 

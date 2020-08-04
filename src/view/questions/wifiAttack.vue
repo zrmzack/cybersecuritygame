@@ -7,32 +7,34 @@
     </div>
     <div class="w">
       <div class="score">
-          <li>
-            <a> Username:{{username}}</a></li>
-          <li>
-            <a> Position:{{position}}</a>
-          </li>
-          <li>
-            <a> Money:{{money}}</a>
-          </li>
+        <li>
+          <a> Username:{{username}}</a></li>
+        <li>
+          <a> Position:{{position}}</a>
+        </li>
+        <li>
+          <a> Money:{{money}}</a>
+        </li>
 
       </div>
-
-
 
 
       <div class="form-wrapper">
 
         <div class="question">
-        <p style="border-style: solid ;font-size: 30px ;background-color: white">You meet a nice wifi, you need to send all you vital files to company, how should you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">You meet a nice wifi, you need to
+            send all you vital files to company, how should you do?</p>
           <div class="answer">
-          <el-button round style="font-size: 18px">Use Hotspot to connect my device</el-button>
-        <el-button round @click="add" style="font-size: 18px">Connect Virtual Private Network with your own device </el-button>
-        <el-button round  style="font-size: 18px">use the public wifi to transfer data and not input any private information </el-button>
+            <el-button round @click="next" style="font-size: 18px">Use Hotspot to connect my device</el-button>
+            <el-button round @click="add" style="font-size: 18px">Connect Virtual Private Network with your own device
+            </el-button>
+            <el-button round @click="next" style="font-size: 18px">use the public wifi to transfer data and not input
+              any private information
+            </el-button>
+          </div>
+        </div>
       </div>
     </div>
-      </div>
-  </div>
   </div>
 </template>
 
@@ -59,7 +61,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
@@ -69,7 +71,7 @@
           query: {
             username: this.username,
             money: this.money,
-            position:this.position
+            position: this.position
           }
         })
       },
@@ -81,7 +83,7 @@
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
         } else {
-          this.position="Development Manager"
+          this.position = "Development Manager"
         }
       }
     }

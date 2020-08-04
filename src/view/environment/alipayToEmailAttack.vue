@@ -1,5 +1,7 @@
 <template>
-  As you are Intermediate Programmer, you are more busy with your work. Many subordinates contact with you in email.
+  <div>  As you are Intermediate Programmer, you are more busy with your work. Many subordinates contact with you in email.
+  <button @click="add"></button>
+  </div>
 </template>
 
 
@@ -36,8 +38,6 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
-        } else {
-          this.position = "Development Manager"
         }
       }
     }, mounted: function () {

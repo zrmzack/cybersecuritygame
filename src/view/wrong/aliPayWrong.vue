@@ -3,7 +3,7 @@
     <div class="show">
       <h1>Give too much permission, your will leak your own data easily,especially the bank information</h1>
     </div>
-    <el-button type="info" round @click="wrong" class="next"> Next</el-button>
+    <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
 
 </template>

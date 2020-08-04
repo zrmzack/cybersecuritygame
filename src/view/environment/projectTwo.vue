@@ -1,6 +1,8 @@
 <template>
-  Nice password keeps all data safe, and solve many problems they raise. You make a success in this project.
-</template>
+  <div>Nice password keeps all data safe, and solve many problems they raise. You make a success in this project.
+    <button @click="add">next</button>
+  </div>
+  </template>
 
 <script>
   export default {

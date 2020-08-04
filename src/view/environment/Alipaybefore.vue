@@ -2,6 +2,7 @@
   <div>
     As the development of science, an software named alipay become more and more popular, most of your friends recommend
     you to install. To make your life more convinent, you install the Alipay.
+    <button @click="add">next</button>
   </div>
 </template>
 
@@ -22,7 +23,6 @@
     },
     methods: {
       add: function () {
-        this.money += 10;
         this.$router.push({
           path: '/aliPay',
           query: {

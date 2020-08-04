@@ -1,6 +1,7 @@
 <template>
   <div>
     You have great skills to solve problems about IT. So many freshman will ask you some questions.
+    <button @click="add">next</button>
   </div>
 </template>
 

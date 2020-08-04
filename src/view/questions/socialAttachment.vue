@@ -27,7 +27,7 @@
             Plan. What should you do about this attachment.</p>
           <div class="answer">
             <el-button round @click="add" style="font-size: 18px">Delete the email</el-button>
-            <el-button round style="font-size: 18px">download the Recruitment Plan</el-button>
+            <el-button round @click="next" style="font-size: 18px">download the Recruitment Plan</el-button>
           </div>
         </div>
       </div>

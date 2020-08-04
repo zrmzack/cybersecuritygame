@@ -2,6 +2,7 @@
   <div>
     When you leaving your office desk, you need better to lock your computer! And luckily, you send data to your team
     leader on time!
+    <button @click="add">next</button>
   </div>
 </template>
 
