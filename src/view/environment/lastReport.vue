@@ -1,6 +1,5 @@
 <template>
-  <div> 1 month later, you have learn the basic process about your work, and you need to solve the later problems by
-    yourself. ......
+  <div> One month later, you make a big progress, and this afternoon, you need to make a report to the leaders. This will be your work report.
     <button @click="add">next</button>
   </div>
 </template>

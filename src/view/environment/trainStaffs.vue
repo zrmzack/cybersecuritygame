@@ -1,7 +1,7 @@
 <template>
   <div>
-    Now, one people will teach you how to deal with the work! Also, You need make a report about the things you do in a
-    week!
+    As a new employee, you need to go through a probation period. Meanwhile, there will be an older employee who will
+    teach you to work. Also, you need to make a report every week for what you have done.
     <button @click="add">next</button>
   </div>
 </template>

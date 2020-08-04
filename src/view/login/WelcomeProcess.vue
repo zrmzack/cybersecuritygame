@@ -1,5 +1,6 @@
 <template>
-  <div> Having a nice party with all new employees. It is time to know the processes about your own work.
+  <div>The first day, company holds a nice party for all new employees. You make many friends in there. After that, you
+    need to focus on your own work, and master the workflow.
     <button @click="add"> next</button>
   </div>
 </template>

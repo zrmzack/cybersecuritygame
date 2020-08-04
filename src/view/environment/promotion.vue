@@ -2,9 +2,8 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Congrationlations, you did a nice presetation. now you are Intermediate Programmer. Next Chapter is coming. You
-        will encounter more things. Also you have chance to buy car.
-        Also, be careful about cybersecurity.
+        Congratulations, you did a nice presentation. now you are Beginner Programmer. Next Chapter is coming. You
+        will encounter more things. Also, Avoid some cyberattackers or you will lose a lot.
       </h2>
     </div>
     <el-button type="info" round @click="next" class="next"> Next</el-button>

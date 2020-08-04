@@ -1,6 +1,5 @@
 <template>
-
-  <div>Congratulations, you have met some</div>
+  <div>Congratulations, you have earn much in the work. You have the following treasures.</div>
 </template>
 
 <script>

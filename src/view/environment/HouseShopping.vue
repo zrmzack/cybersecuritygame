@@ -3,12 +3,15 @@
     <div>
       house1
     </div>
+    <button>buy1</button>
     <div>
       house2
     </div>
+    <button>buy1</button>
     <div>
       house3
     </div>
+    <button>buy1</button>
   </div>
 </template>
 

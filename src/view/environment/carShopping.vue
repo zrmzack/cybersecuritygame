@@ -1,8 +1,11 @@
 <template>
   <div>
     <div>car1</div>
+    <button>buy1</button>
     <div>car2</div>
+    <button>buy2</button>
     <div>car3</div>
+    <button>buy3</button>
   </div>
 </template>
 
