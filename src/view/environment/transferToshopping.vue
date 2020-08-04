@@ -1,15 +1,13 @@
 <template>
-  As you are Intermediate Programmer, you are more busy with your work. Many subordinates contact with you in email.
+  <div>after you finish a week work, you want to buy something for yourself.</div>
 </template>
-
-
 <script>
   export default {
-    name: "alipayToEmailAttack",
+    name: "transferToshopping",
     created() {
+      console.log(this.$route.query.username)
       this.username = this.$route.query.username
-      this.money = this.$route.query.money
-      this.position = this.$route.query.position
+
     },
     data() {
       return {
@@ -22,7 +20,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/fireWallData',
+          path: '/shoppingOnline',
           query: {
             username: this.username,
             money: this.money,
@@ -37,11 +35,10 @@
           this.position = "Intermediate Programmer"
         } else if (this.money >= 90 && this.money < 140) {
           this.position = "Senior Programmer"
-        } else {
-          this.position = "Development Manager"
         }
       }
-    }, mounted: function () {
+    },
+    mounted: function () {
       this.getPosition()
     }
   }

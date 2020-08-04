@@ -31,7 +31,7 @@
     methods: {
       next: function () {
         this.$router.push({
-          path: '/aliPay',
+          path: '/lunchTime',
           query: {
             username: this.username,
             money: this.money,

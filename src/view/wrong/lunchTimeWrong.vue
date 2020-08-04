@@ -25,7 +25,7 @@
     data() {
       return {
         username: '',
-        position:çç 'test',
+        position: 'test',
         money: 0,
       }
     },

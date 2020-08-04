@@ -56,7 +56,17 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/wifiAttack',
+          path: '/shoppingTOWifi',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/onlineShoppingWrong',
           query: {
             username: this.username,
             money: this.money,

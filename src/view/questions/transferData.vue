@@ -39,8 +39,6 @@
   export default {
     name: "transferData",
     created() {
-      console.log(this.$route.query.username)
-      console.log(this.$route.query.money)
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.position = this.$route.query.position
@@ -56,8 +54,18 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/transferToshopping',
 
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/transferDataWrong',
           query: {
             username: this.username,
             money: this.money,

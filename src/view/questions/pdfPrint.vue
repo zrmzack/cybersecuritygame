@@ -62,6 +62,16 @@
           }
         })
       },
+      next: function () {
+        this.$router.push({
+          path: '/pdfPrintWrong',
+          query: {
+            username: this.username,
+            money: this.money,
+            position:this.position
+          }
+        })
+      },
       getPosition: function () {
         if (this.money < 40) {
           this.position = "Beginner Programmer"

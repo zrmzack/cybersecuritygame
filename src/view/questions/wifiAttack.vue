@@ -55,7 +55,17 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/pdfPrint',
+          path: '/wifiTopdf',
+          query: {
+            username: this.username,
+            money: this.money,
+            position:this.position
+          }
+        })
+      },
+      next: function () {
+        this.$router.push({
+          path: '/wifiAttackWrong',
           query: {
             username: this.username,
             money: this.money,

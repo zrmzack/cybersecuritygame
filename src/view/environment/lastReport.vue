@@ -25,7 +25,7 @@
       add: function () {
         this.money += 10;
         this.$router.push({
-          path: '/lunchTime',
+          path: '/promotion',
           query: {
             username: this.username,
             money: this.money,
