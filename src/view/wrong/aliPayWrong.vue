@@ -24,6 +24,7 @@
         username: '',
         position: 'test',
         money: 0,
+        Property: 0,
       }
     },
     methods: {
@@ -34,26 +35,12 @@
             username: this.username,
             money: this.money,
             position: this.position,
+            Property: this.Property,
           }
         })
       },
-      getPosition: function () {
-        if (this.money < 40) {
-          this.position = "Beginner Programmer"
-        } else if (this.money >= 40 && this.money < 90) {
-          this.position = "Intermediate Programmer"
-        } else if (this.money >= 90 && this.money < 140) {
-          this.position = "Senior Programmer"
-        } else {
-          this.position = "Project Manager"
-        }
-      }
+
     },
-    mounted: function () {
-      this.getPosition()
-    }
-
-
   }
 </script>
 

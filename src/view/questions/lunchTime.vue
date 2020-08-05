@@ -8,12 +8,12 @@
     <div class="w">
       <div class="score">
         <li>
-          <a> Username:{{username}}</a></li>
+          <a> Username: {{username}}</a></li>
         <li>
-          <a> Position:{{position}}</a>
+          <a> Position: {{position}}</a>
         </li>
         <li>
-          <a> Money:{{money}}</a>
+          <a> Points: {{money}}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
         </li>
 
 
@@ -53,8 +53,9 @@
     data() {
       return {
         username: '',
-        position: 'test',
+        position: 'Beginner Programmer',
         money: 0,
+        Property:3000,
       }
     },
     methods: {
@@ -65,7 +66,8 @@
           query: {
             username: this.username,
             money: this.money,
-            position: this.position
+            position: this.position,
+            Property:this.Property,
           }
         })
       },
@@ -75,27 +77,13 @@
           query: {
             username: this.username,
             money: this.money,
-            position: this.position
+            position: this.position,
+            Property:this.Property,
           }
         })
       },
-      getPosition: function () {
-        if (this.money < 40) {
-          this.position = "Beginner Programmer"
-        } else if (this.money >= 40 && this.money < 90) {
-          this.position = "Intermediate Programmer"
-        } else if (this.money >= 90 && this.money < 140) {
-          this.position = "Senior Programmer"
-        } else {
-          this.position = "expert"
-        }
-      }
+
     },
-    mounted: function () {
-      this.getPosition()
-    }
-
-
   }
 </script>
 

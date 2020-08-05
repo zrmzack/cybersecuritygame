@@ -4,7 +4,7 @@
     <h1>
       Username:{{username}}
       Position:{{position}}
-      Money:{{money}}
+      Money:{{money}} &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
       Cybersecurity
     </h1>
     <div class="form-wrapper">
@@ -26,12 +26,14 @@
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.position = this.$route.query.position
+      this.Property = this.$route.query.Property
     },
     data() {
       return {
         username: '',
         position: 'test',
         money: 0,
+        Property: 0,
         pwd: '',
         passwordAlert: true,
       }
@@ -52,25 +54,13 @@
             query: {
               username: this.username,
               money: this.money,
-              position: this.position
+              position: this.position,
+              Property: this.Property,
             }
           })
         }
       },
-
-      getPosition: function () {
-        if (this.money < 40) {
-          this.position = "Beginner Programmer"
-        } else if (this.money >= 40 && this.money < 90) {
-          this.position = "Intermediate Programmer"
-        } else if (this.money >= 90 && this.money < 140) {
-          this.position = "Senior Programmer"
-        }
-      }
     },
-    mounted: function () {
-      this.getPosition()
-    }
   }
 </script>
 
