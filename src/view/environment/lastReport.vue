@@ -13,6 +13,7 @@
 <script>
   export default {
     name: "lastReport",
+
     created() {
       console.log(this.$route.query.username)
       this.username = this.$route.query.username

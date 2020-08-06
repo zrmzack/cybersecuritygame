@@ -30,6 +30,7 @@
     },
     methods: {
       add: function () {
+        this.Property+=1000;
         this.$router.push({
           path: '/pdfPrint',
           query: {

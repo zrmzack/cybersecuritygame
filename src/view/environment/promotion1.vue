@@ -30,6 +30,7 @@
     },
     methods: {
       next: function () {
+        this.Property+=1000;
         this.$router.push({
           path: '/Alipaybefore',
           query: {

@@ -50,6 +50,7 @@ import businessToSocailAttach from "../view/environment/businessToSocailAttach";
 import fireDataToWindowpop from "../view/environment/fireDataToWindowpop";
 import windowsUpWrong from "../view/wrong/windowsUpWrong";
 import Finish from "../view/environment/Finish";
+import BagsShopping from "@/view/environment/BagsShopping";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
   {path: "/", component: index},
@@ -105,4 +106,5 @@ export default [
   {path: "/fireDataToWindowpop", component: fireDataToWindowpop},
   {path: "/windowsUpWrong", component: windowsUpWrong},
   {path: "/Finish", component: Finish},
+  {path: "/BagsShopping", component: BagsShopping},
 ]

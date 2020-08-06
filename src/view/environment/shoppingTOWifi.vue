@@ -13,6 +13,7 @@
 <script>
   export default {
     name: "shoppingTOWifi",
+
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
@@ -29,6 +30,7 @@
     },
     methods: {
       add: function () {
+        this.Property+=1000;
         this.$router.push({
           path: '/wifiAttack',
           query: {

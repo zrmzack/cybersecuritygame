@@ -28,6 +28,7 @@ export default {
   },
   methods: {
     add: function () {
+      this.Property+=1000;
       this.$router.push({
         path: '/fireWall',
         query: {

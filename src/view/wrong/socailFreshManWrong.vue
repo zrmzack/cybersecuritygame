@@ -1,12 +1,12 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h1>
+      <h2>
         Although, you are really busy about your work, but you do make a big misstake, many user information was leak, the
         boss decided to punish you.
         you have lose money. While, at the same time, as you have so strong skills, boss want to give you a promotion.
 
-      </h1>
+      </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>

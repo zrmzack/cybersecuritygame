@@ -13,7 +13,7 @@
           <a> Position:{{position}}</a>
         </li>
         <li style="color: black">
-          <a> Money:{{money}}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
+          <a> Points:{{money}}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
         </li>
 
 
@@ -55,6 +55,7 @@
       checkPassword() {
         if (this.pwd.length >= 8 && (/.*[a-z]+.*/).test(this.pwd) && (/.*[A-Z]+.*/).test(this.pwd) && (/^[0-9]*/).test(this.pwd)
             && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd)) {
+          this.Property+=2000;
           this.passwordAlert = false
         }
       },
