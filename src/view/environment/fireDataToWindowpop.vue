@@ -18,11 +18,13 @@
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
       this.Bag = this.$route.query.Bag
+      this.car = this.$route.query.car
     },
     data() {
       return {
         username: '',
         Bag: '',
+        car: '',
         position: 'test',
         money: 0,
         Property: 0,
@@ -36,6 +38,7 @@
           query: {
             username: this.username,
             Bag: this.Bag,
+            car: this.car,
             money: this.money,
             position: this.position,
             Property: this.Property

@@ -27,7 +27,7 @@
             wanted you could help him to login in system. What should you do?</p>
           <div class="answer">
             <div>
-              <el-button round @click="next" style="font-size: 18px">Ignore him</el-button>
+              <el-button round @click="add" style="font-size: 18px">Ignore him</el-button>
             </div>
             <br>
             <div>
@@ -57,11 +57,13 @@ export default {
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
+    this.car = this.$route.query.car
   },
   data() {
     return {
       username: '',
       Bag: '',
+      car: '',
       position: 'test',
       money: 0,
       Property: 0,
@@ -79,6 +81,7 @@ export default {
           position: this.position,
           Property: this.Property,
           Bag: this.Bag,
+          car: this.car,
         }
       })
     },
@@ -91,6 +94,7 @@ export default {
           position: this.position,
           Property: this.Property,
           Bag: this.Bag,
+          car: this.car,
         }
       })
     },

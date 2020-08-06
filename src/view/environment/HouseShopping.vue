@@ -38,6 +38,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Bag = this.$route.query.Bag
+    this.car = this.$route.query.car
   },
   data() {
     return {
@@ -46,6 +47,7 @@ export default {
       money: 0,
       Property: 0,
       Bag: '',
+      car: '',
     }
   },
   methods: {
@@ -59,6 +61,7 @@ export default {
           position: this.position,
           Property: this.Property,
           Bag: this.Bag,
+          car: this.car,
         }
       })
     },
@@ -72,7 +75,8 @@ export default {
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'LV'
+            Bag: 'LV',
+            car: '',
           }
         })
       }
@@ -88,6 +92,7 @@ export default {
             position: this.position,
             Property: this.Property,
             Bag: 'Burberry',
+            car: '',
           }
         })
       }
@@ -102,7 +107,8 @@ export default {
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'Coach'
+            Bag: 'Coach',
+            car: 'Coach'
           }
         })
       }
@@ -117,7 +123,8 @@ export default {
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'MCM'
+            Bag: 'MCM',
+            car: 'MCM',
           }
         })
       }
