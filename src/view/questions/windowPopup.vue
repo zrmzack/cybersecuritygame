@@ -37,7 +37,7 @@
             </div>
             <br>
             <div>
-              <el-button round @click="add" style="font-size: 18px">close the pop-up through red "X" in upper corner
+              <el-button round @click="add" style="font-size: 18px">Close the pop-up through red "X" in upper corner
               </el-button>
             </div>
           </div>
@@ -57,10 +57,12 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
       username: '',
+      Bag: '',
       position: 'test',
       money: 0,
       Property: 0,
@@ -77,6 +79,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.position,
+          Bag: this.Bag,
         }
       })
     },
@@ -89,6 +92,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.position,
+          Bag: this.Bag,
         }
       })
     },

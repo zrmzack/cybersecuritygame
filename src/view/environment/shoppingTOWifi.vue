@@ -2,7 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        One day, dressing your nice cloth, you go out for business. While you need to sumbmit your work to your team, at the
+        One day, taking the nice bag, you go out for business. While you need to submit your work to your team, at the
         mean time, you find a nice wifi!
       </h2>
     </div>
@@ -19,6 +19,8 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
+
     },
     data() {
       return {
@@ -26,6 +28,7 @@
         position: 'test',
         money: 0,
         Property: 0,
+        Bag: 0,
       }
     },
     methods: {
@@ -38,6 +41,7 @@
             money: this.money,
             position: this.position,
             Property: this.Property,
+            Bag: this.Bag,
           }
         })
       },

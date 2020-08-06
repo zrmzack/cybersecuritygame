@@ -22,8 +22,8 @@
       <div class="form-wrapper">
         <div class="question">
           <p style="border-style: solid ;font-size: 30px ;background-color: white">While in another city for business,
-            your team make a big profit from the collaborlation,
-            and your workmate will talk some details about company decisions with you in public place.
+            your team make a big profit from the project,
+            and your workmate  talks some details about company decisions with you in a public place.
             What should you do?</p>
           <div class="answer">
             <div>
@@ -31,7 +31,7 @@
             </div>
             <br>
             <div>
-              <el-button round @click="next" style="font-size: 18px">ignore your workmate</el-button>
+              <el-button round @click="next" style="font-size: 18px">Ignore your workmate</el-button>
             </div>
             <br>
             <div>
@@ -52,6 +52,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
@@ -59,6 +60,7 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      Bag: '',
     }
   },
   methods: {
@@ -72,6 +74,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -83,6 +86,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

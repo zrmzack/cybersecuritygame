@@ -27,6 +27,7 @@ export default {
       position: 'Beginner Programmer',
       money: 0,
       Property: 3000,
+      Bag: '3000',
     }
   },
   methods: {
@@ -39,6 +40,7 @@ export default {
               money: this.money,
               position: this.position,
               Property: this.Property,
+              Bag: this.Bag,
 
             }
           })

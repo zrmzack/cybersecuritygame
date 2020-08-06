@@ -1,9 +1,9 @@
-
 <template>
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Congratulations, you are now middle programmer, you have the right to buy car now.
+        Contribute a lot to company. You get a promotion successfully. Now, you are a intermediate programmer. You have
+        chance to buy a car.
       </h2>
     </div>
     <el-button type="info" round @click="next" class="next"> Next</el-button>
@@ -12,40 +12,43 @@
 
 
 <script>
-  export default {
-    name: "promotion1",
-    created() {
-      console.log(this.$route.query.username)
-      this.username = this.$route.query.username
-      this.money = this.$route.query.money
-      this.Property = this.$route.query.Property
+export default {
+  name: "promotion1",
+  created() {
+    console.log(this.$route.query.username)
+    this.username = this.$route.query.username
+    this.money = this.$route.query.money
+    this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
+  },
+  data() {
+    return {
+      username: '',
+      Bag: '',
+      position: 'middle programmer',
+      money: 0,
+      Property: 0,
+    }
+  },
+  methods: {
+    next: function () {
+      this.Property += 1000;
+      this.$router.push({
+        path: '/Alipaybefore',
+        query: {
+          username: this.username,
+          money: this.money,
+          Bag: this.Bag,
+          position: this.position,
+          Property: this.Property,
+        }
+      })
     },
-    data() {
-      return {
-        username: '',
-        position: 'middle programmer',
-        money: 0,
-        Property: 0,
-      }
-    },
-    methods: {
-      next: function () {
-        this.Property+=1000;
-        this.$router.push({
-          path: '/Alipaybefore',
-          query: {
-            username: this.username,
-            money: this.money,
-            position: this.position,
-            Property: this.Property,
-          }
-        })
-      },
 
-    },
+  },
 
 
-  }
+}
 </script>
 <style scoped>
 .show {

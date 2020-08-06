@@ -3,7 +3,7 @@
     <div class="show">
       <h2>
         Nice password keeps all data safe, and solve many problems they raise. You make a success in this project.
-
+        The boss decides to give you some bonus.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -17,6 +17,7 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
@@ -24,11 +25,13 @@
         position: 'test',
         money: 0,
         Property: 0,
+        Bag: '0',
       }
     },
     methods: {
       add: function () {
-        this.Property+=1000;
+
+        this.Property+=this.money*300;
         this.$router.push({
           path: '/outsideBusinessTalk',
           query: {
@@ -36,6 +39,7 @@
             money: this.money,
             position: this.position,
             Property: this.Property,
+            Bag: this.Bag,
           }
         })
       },

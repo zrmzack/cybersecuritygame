@@ -27,7 +27,7 @@
             will expire in a week, please click this link to login to your account. What should you do?</p>
           <div class="answer">
             <div>
-              <el-button round @click="next" style="font-size: 18px">CLick the link</el-button>
+              <el-button round @click="next" style="font-size: 18px">Click the link</el-button>
             </div>
             <br>
             <div>
@@ -35,7 +35,7 @@
             </div>
             <br>
             <div>
-              <el-button round @click="add" style="font-size: 18px">hover over the link to see if it goes to an
+              <el-button round @click="add" style="font-size: 18px">Hover over the link to see if it goes to an
                 authentic
                 site
               </el-button>
@@ -57,6 +57,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
@@ -64,6 +65,7 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      Bag: '',
     }
   },
   methods: {
@@ -77,6 +79,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -88,6 +91,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

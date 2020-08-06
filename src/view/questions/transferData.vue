@@ -54,6 +54,7 @@ export default {
   data() {
     return {
       username: '',
+      Bag: '',
       position: 'test',
       money: 0,
       Property: 0,
@@ -70,6 +71,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -81,6 +83,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

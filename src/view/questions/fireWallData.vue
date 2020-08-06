@@ -21,23 +21,23 @@
 
         <div class="question">
           <p style="border-style: solid ;font-size: 30px ;background-color: white">You are
-            in a data department. As virus have not attack your system, at the meaning, you need send some files to your
+            in a data department. As virus have not attacked your system, Meanwhile, you need send some files to your
             partners. While the computer alert you need to update the
             firewall immediately. What should
             you do?</p>
           <div class="answer">
             <div>
-              <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
+              <el-button round @click="add" style="font-size: 18px">Stop transferring data temporarily, and update the
                 firewall
               </el-button>
             </div>
             <br>
             <div>
-              <el-button round @click="next" style="font-size: 18px">ignore it</el-button>
+              <el-button round @click="next" style="font-size: 18px">Ignore it</el-button>
             </div>
             <br>
             <div>
-              <el-button round @click="next" style="font-size: 18px">after you finish transferring data, update the
+              <el-button round @click="next" style="font-size: 18px">After you finish transferring data, update the
                 firewall
                 immediately.
               </el-button>
@@ -58,6 +58,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
@@ -65,6 +66,7 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      Bag: '',
     }
   },
   methods: {
@@ -78,6 +80,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -89,6 +92,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

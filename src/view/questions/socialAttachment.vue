@@ -31,7 +31,7 @@
             </div>
             <br>
             <div>
-              <el-button round @click="next" style="font-size: 18px">download the Recruitment Plan</el-button>
+              <el-button round @click="next" style="font-size: 18px">Download the Recruitment Plan</el-button>
             </div>
           </div>
         </div>
@@ -48,6 +48,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
@@ -68,6 +69,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -79,6 +81,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
 
         }
       })

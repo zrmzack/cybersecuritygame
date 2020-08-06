@@ -26,17 +26,17 @@
             members, your computer alert you need to update the firewall. What should you do?</p>
           <div class="answer">
             <div>
-              <el-button round @click="add" style="font-size: 18px">stop transferring data temporyly, and update the
+              <el-button round @click="add" style="font-size: 18px">Stop transferring data temporarily, and update the
                 firewall
               </el-button>
             </div>
             <br>
             <div>
-              <el-button round @click="next" style="font-size: 18px">ignore it</el-button>
+              <el-button round @click="next" style="font-size: 18px">Ignore it</el-button>
             </div>
             <br>
             <div>
-              <el-button round @click="add" style="font-size: 18px">after you finish transferring data, update the
+              <el-button round @click="add" style="font-size: 18px">After you finish transferring data, update the
                 firewall immediately.
               </el-button>
             </div>
@@ -57,6 +57,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
@@ -64,6 +65,7 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      Bag: '',
     }
   },
   methods: {
@@ -77,7 +79,8 @@ export default {
           username: this.username,
           money: this.money,
           position: this.position,
-          Property: this.Property
+          Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -89,6 +92,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

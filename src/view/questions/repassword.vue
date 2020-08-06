@@ -20,11 +20,11 @@
       </div>
       <div class="form-wrapper">
         <div>
-          <strong>Input your password to protect your vital files.</strong>
+          <h2>Input your password to protect your vital files.</h2>
           <input placeholder="input your password" v-model="pwd" @keyup="checkPassword"></input>
         </div>
-        <button @click="add">next</button>
-        <p v-show="passwordAlert">Create a strong password to keep your data safe</p>
+        <el-button round @click="add">next</el-button>
+        <p v-show="passwordAlert" style="color: red">Create a strong password to keep your data safe</p>
       </div>
     </div>
   </div>
@@ -40,6 +40,8 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
+
     },
     data() {
       return {
@@ -48,6 +50,7 @@
         money: 0,
         Property: 0,
         pwd: '',
+        Bag: '',
         passwordAlert: true,
       }
     },
@@ -70,6 +73,7 @@
               money: this.money,
               position: this.position,
               Property: this.Property,
+              Bag: this.Bag,
             }
           })
         }

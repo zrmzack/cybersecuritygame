@@ -21,7 +21,7 @@
 
       <div class="form-wrapper">
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">After you print a report pdf in
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">After you print the pdf in a
             public computer, how to deal with the pdf in the computer?</p>
           <div class="answer">
             <div>
@@ -50,6 +50,7 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
 
   },
   data() {
@@ -58,13 +59,14 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      Bag: '',
     }
   },
   methods: {
     add: function () {
       this.money += 10;
       this.Property+=2000;
-      this.Property+=2000;
+
       this.$router.push({
         path: '/promotion1',
         query: {
@@ -72,6 +74,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -83,6 +86,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

@@ -22,8 +22,8 @@
       <div class="form-wrapper">
 
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">You meet a nice wifi, you need to
-            send all you vital files to company, how should you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">This is a public wifi, and  you need to
+            send all your vital files to team, how should you do?</p>
           <div class="answer">
             <div>
               <el-button round @click="next" style="font-size: 18px">Use Hotspot to connect my device</el-button>
@@ -54,10 +54,12 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
       username: '',
+      Bag: '',
       position: 'test',
       money: 0,
       Property: 0,
@@ -74,6 +76,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -85,6 +88,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

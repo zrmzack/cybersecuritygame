@@ -2,8 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        You have great skills to solve problems about IT. So many freshman will ask you some questions.
-
+        As you solve many It problems for company, you have great skills. So many employees will ask you some questions.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -14,6 +13,7 @@
     name: "firewallToSocial",
     created() {
       this.username = this.$route.query.username
+      this.Bag = this.$route.query.Bag
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
@@ -21,6 +21,7 @@
     data() {
       return {
         username: '',
+        Bag: '',
         position: 'test',
         money: 0,
         Property: 3000,
@@ -34,6 +35,7 @@
           query: {
             username: this.username,
             money: this.money,
+            Bag: this.Bag,
             position: this.position,
             Property: this.Property
           }

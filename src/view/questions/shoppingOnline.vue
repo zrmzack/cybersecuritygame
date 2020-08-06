@@ -20,7 +20,7 @@
 
       <div class="form-wrapper">
         <div class="question">
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">You need to pay now. What is the
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">What is the
             safest way to pay online?</p>
           <div class="answer">
             <div>

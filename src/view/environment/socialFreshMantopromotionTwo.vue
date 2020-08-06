@@ -2,7 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Congratulation,As you have strong skills, congratulate a lot to the company. You get a promotion. you are senior
+        Congratulations, As you have strong skills, contribute a lot to the company. You get a promotion. you are a senior
         programmers now. You will meet more things. Also you can buy house now.
       </h2>
     </div>
@@ -17,10 +17,12 @@
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
         username: '',
+        Bag: '',
         position: 'Senior Programmer',
         money: 0,
         Property: 0,
@@ -34,6 +36,7 @@
           query: {
             username: this.username,
             money: this.money,
+            Bag: this.Bag,
             position: this.position,
             Property: this.Property,
           }

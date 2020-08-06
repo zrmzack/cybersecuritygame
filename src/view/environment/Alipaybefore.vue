@@ -5,7 +5,7 @@
     <div class="show">
       <h2>
         As the development of science, an software named alipay become more and more popular, most of your friends recommend
-        you to install. To make your life more convinent, you install the Alipay.
+        you to install. To make your life more convenient, you install the Alipay.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -19,6 +19,7 @@
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
@@ -26,6 +27,7 @@
         position: 'middle programmer',
         money: 0,
         Property: 3000,
+        Bag: '',
       }
     },
     methods: {
@@ -37,7 +39,8 @@
             username: this.username,
             money: this.money,
             position: this.position,
-            Property: this.Property
+            Property: this.Property,
+            Bag: this.Bag,
           }
         })
       },

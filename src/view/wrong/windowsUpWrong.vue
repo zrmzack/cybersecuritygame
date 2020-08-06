@@ -17,10 +17,12 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
         username: '',
+        Bag: '',
         position: 'test',
         money: 0,
         Property: 0,
@@ -35,21 +37,12 @@
             money: this.money,
             position: this.position,
             Property: this.Property,
+            Bag: this.Bag,
           }
         })
       },
-      getPosition: function () {
-        if (this.money < 40) {
-          this.position = "Beginner Programmer"
-        } else if (this.money >= 40 && this.money < 90) {
-          this.position = "Intermediate Programmer"
-        } else if (this.money >= 90 && this.money < 140) {
-          this.position = "Senior Programmer"
-        }
-      }
-    }, mounted: function () {
-      this.getPosition()
-    }
+
+    },
   }
 </script>
 <style scoped>

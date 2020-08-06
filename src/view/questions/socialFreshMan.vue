@@ -24,10 +24,10 @@
         <div class="question">
           <p style="border-style: solid ;font-size: 30px ;background-color: white">One day, you got a call, he described
             himself as a new employee. He said he could not log into the system. He
-            wanted you could help him to login to system. What should you do?</p>
+            wanted you could help him to login in system. What should you do?</p>
           <div class="answer">
             <div>
-              <el-button round @click="add" style="font-size: 18px">Ignore him</el-button>
+              <el-button round @click="next" style="font-size: 18px">Ignore him</el-button>
             </div>
             <br>
             <div>
@@ -56,10 +56,12 @@ export default {
     this.money = this.$route.query.money
     this.position = this.$route.query.position
     this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
   },
   data() {
     return {
       username: '',
+      Bag: '',
       position: 'test',
       money: 0,
       Property: 0,
@@ -68,7 +70,7 @@ export default {
   methods: {
     add: function () {
       this.money += 10;
-      this.Property+=2000;
+      this.Property += 2000;
       this.$router.push({
         path: '/socialFreshMantopromotionTwo',
         query: {
@@ -76,6 +78,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },
@@ -87,6 +90,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
+          Bag: this.Bag,
         }
       })
     },

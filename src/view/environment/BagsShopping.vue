@@ -57,7 +57,7 @@ export default {
           money: this.money,
           position: this.position,
           Property: this.Property,
-          Bag: this.Bag
+          Bag: this.Bag,
         }
       })
     },
@@ -108,6 +108,7 @@ export default {
     },
     buy4: function () {
       if (this.Property >= 6500) {
+        this.Property -= 6500
         this.$router.push({
           path: '/shoppingOnline',
           query: {

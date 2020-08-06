@@ -19,10 +19,12 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
         username: '',
+        Bag: '',
         position: 'test',
         money: 0,
         Property: 0,
@@ -34,6 +36,7 @@
           path: '/socialAttachTofirewalldata',
           query: {
             username: this.username,
+            Bag: this.Bag,
             money: this.money,
             position: this.position,
             Property: this.Property,

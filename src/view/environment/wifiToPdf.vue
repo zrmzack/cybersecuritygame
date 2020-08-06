@@ -4,7 +4,7 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        As you did a nice work those days, you need to print a pdf for your report and make a presentation!
+        Send files to company safely, and you did nice work those days, you need to print a pdf for your report and make a presentation!
 
       </h2>
     </div>
@@ -19,10 +19,12 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Property = this.$route.query.Property
+      this.Bag = this.$route.query.Bag
     },
     data() {
       return {
         username: '',
+        Bag: '',
         position: 'test',
         money: 0,
         Property: 0,
@@ -38,6 +40,7 @@
             money: this.money,
             position: this.position,
             Property: this.Property,
+            Bag: this.Bag,
           }
         })
       },
