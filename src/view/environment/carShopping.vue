@@ -2,24 +2,24 @@
   <div class="center-in-center">
     <div class="show">
       <div>
-        <img src="../../assets/lv.jpeg" alt="">
+        <img src="../../assets/aodi.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         4000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy1">Buy</el-button></span>
       </div>
 
-      <div><img src="../../assets/burberry.jpeg" alt="">
+      <div><img src="../../assets/benchi.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         5000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy2">Buy</el-button></span>
       </div>
-      <div><img src="../../assets/coach.jpeg" alt="">
+      <div><img src="../../assets/BMW.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         6000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
         <span> <el-button roundstyle="font-size: 18px" @click="buy3">Buy</el-button></span>
       </div>
-      <div><img src="../../assets/mcm.png" alt="">
+      <div><img src="../../assets/luhu.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         6500&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy4">Buy</el-button></span>

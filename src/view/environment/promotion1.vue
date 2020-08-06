@@ -34,7 +34,7 @@ export default {
     next: function () {
       this.Property += 1000;
       this.$router.push({
-        path: '/Alipaybefore',
+        path: '/carShopping',
         query: {
           username: this.username,
           money: this.money,

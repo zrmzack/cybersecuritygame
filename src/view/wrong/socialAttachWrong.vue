@@ -18,7 +18,7 @@
       this.username = this.$route.query.username
       this.money = this.$route.query.money
       this.position = this.$route.query.position
-      this.Property = this.$route.query.Property
+      this.Property = this.$route.query.Property/2
       this.Bag = this.$route.query.Bag
     },
     data() {

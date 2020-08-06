@@ -11,39 +11,40 @@
 </template>
 
 <script>
-  export default {
-    name: "pdfPrintWrong",
-    created() {
-      this.username = this.$route.query.username
-      this.money = this.$route.query.money
-      this.position = this.$route.query.position
-      this.Property = this.$route.query.Property
-      this.Bag = this.$route.query.Bag
+export default {
+  name: "pdfPrintWrong",
+  created() {
+    this.username = this.$route.query.username
+    this.money = this.$route.query.money
+    this.position = this.$route.query.position
+    this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
+  },
+  data() {
+    return {
+      username: '',
+      Bag: '',
+      position: 'test',
+      money: 0,
+      Property: 0,
+    }
+  },
+  methods: {
+    add: function () {
+      this.Property += 1000;
+      this.$router.push({
+        path: '/promotion1',
+        query: {
+          username: this.username,
+          money: this.money,
+          position: this.position,
+          Property: this.Property,
+          Bag: this.Bag,
+        }
+      })
     },
-    data() {
-      return {
-        username: '',
-        Bag: '',
-        position: 'test',
-        money: 0,
-        Property: 0,
-      }
-    },
-    methods: {
-      add: function () {
-        this.$router.push({
-          path: '/promotion1',
-          query: {
-            username: this.username,
-            money: this.money,
-            position: this.position,
-            Property: this.Property,
-            Bag: this.Bag,
-          }
-        })
-      },
-    },
-  }
+  },
+}
 </script>
 <style scoped>
 .show {

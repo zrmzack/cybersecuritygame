@@ -18,6 +18,7 @@
       this.money = this.$route.query.money
       this.position = this.$route.query.position
       this.Bag = this.$route.query.Bag
+      this.Property = this.$route.query.Property
     },
 
     data() {

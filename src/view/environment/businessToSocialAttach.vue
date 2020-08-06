@@ -12,7 +12,7 @@
 </template>
 <script>
   export default {
-    name: "businessToSocailAttach",
+    name: "businessToSocialAttach",
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
