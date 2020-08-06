@@ -52,7 +52,7 @@ export default {
     add: function () {
       this.Property += 1000;
       this.$router.push({
-        path: '/carShopping',
+        path: '/Alipaybefore',
         query: {
           username: this.username,
           money: this.money,
@@ -66,7 +66,7 @@ export default {
       if (this.Property >= 4000) {
         this.Property -= 4000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/Alipaybefore',
           query: {
             username: this.username,
             money: this.money,
@@ -81,7 +81,7 @@ export default {
       if (this.Property >= 5000) {
         this.Property -= 5000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/Alipaybefore',
           query: {
             username: this.username,
             money: this.money,
@@ -96,7 +96,7 @@ export default {
       if (this.Property >= 6000) {
         this.Property -= 6000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/Alipaybefore',
           query: {
             username: this.username,
             money: this.money,
@@ -111,7 +111,7 @@ export default {
       if (this.Property >= 6500) {
         this.Property -= 6500
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/Alipaybefore',
           query: {
             username: this.username,
             money: this.money,

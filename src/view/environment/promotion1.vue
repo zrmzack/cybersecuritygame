@@ -25,7 +25,7 @@ export default {
     return {
       username: '',
       Bag: '',
-      position: 'middle programmer',
+      position: 'Middle Programmer',
       money: 0,
       Property: 0,
     }
