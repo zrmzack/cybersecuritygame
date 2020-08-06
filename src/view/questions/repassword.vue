@@ -1,21 +1,34 @@
 <template>
+  <div class="whole">
+    <div class="header w">
+      <h1>
+        Cybersecurity
+      </h1>
+    </div>
+    <div class="w">
+      <div class="score">
+        <li style="color: black">
+          <a> Username:{{username}}</a></li>
+        <li style="color: black">
+          <a> Position:{{position}}</a>
+        </li>
+        <li style="color: black">
+          <a> Money:{{money}}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
+        </li>
 
-  <div>
-    <h1>
-      Username:{{username}}
-      Position:{{position}}
-      Money:{{money}} &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
-      Cybersecurity
-    </h1>
-    <div class="form-wrapper">
-      <div>
-        <strong>Input your password to protect your vital files.</strong>
-        <input placeholder="input your password" v-model="pwd" @keyup="checkPassword"></input>
+
       </div>
-      <button @click="add">next</button>
-      <p v-show="passwordAlert">Create a strong password to keep your data safe</p>
+      <div class="form-wrapper">
+        <div>
+          <strong>Input your password to protect your vital files.</strong>
+          <input placeholder="input your password" v-model="pwd" @keyup="checkPassword"></input>
+        </div>
+        <button @click="add">next</button>
+        <p v-show="passwordAlert">Create a strong password to keep your data safe</p>
+      </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -65,5 +78,64 @@
 </script>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.whole {
+  background: url("../../assets/work5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+
+}
+
+.header {
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 10px auto;
+}
+
+.score {
+  height: 150px;
+  color: white;
+  font-size: 25px;
+
+}
+
+.score ul li a {
+  display: block;
+  height: 80px;
+  padding: 0 10px;
+  line-height: 80px;
+}
+
+.score ul li {
+  float: left;
+  margin: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.score ul li {
+  float: left;
+  margin: 0 20px;
+}
+
+.answer {
+  padding-top: 30px;
+
+}
 </style>

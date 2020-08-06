@@ -2,7 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Congratulations, you did a nice presentation. now you are Beginner Programmer. Next Chapter is coming. You
+        Congratulations, you did a nice presentation. Now you are Beginner Programmer. Next Chapter is coming. You
         will encounter more things. Also, Avoid some cyberattackers or you will lose a lot.
       </h2>
     </div>
