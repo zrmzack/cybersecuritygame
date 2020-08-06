@@ -42,6 +42,7 @@
       this.Property = this.$route.query.Property
       this.Bag = this.$route.query.Bag
       this.car = this.$route.query.car
+      this.house = this.$route.query.house
 
     },
     data() {
@@ -53,6 +54,7 @@
         pwd: '',
         Bag: '',
         car: '',
+        house: '',
         passwordAlert: true,
       }
     },
@@ -60,7 +62,6 @@
       checkPassword() {
         if (this.pwd.length >= 8 && (/.*[a-z]+.*/).test(this.pwd) && (/.*[A-Z]+.*/).test(this.pwd) && (/^[0-9]*/).test(this.pwd)
             && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd)) {
-          this.Property+=2000;
           this.passwordAlert = false
         }
       },
@@ -68,6 +69,7 @@
         console.log(this.pwd)
         if (this.passwordAlert == false) {
           this.money += 10;
+          this.Property+=2000;
           this.$router.push({
             path: '/projectTwo',
             query: {
@@ -77,6 +79,7 @@
               Property: this.Property,
               Bag: this.Bag,
               car: this.car,
+              house: this.house,
             }
           })
         }

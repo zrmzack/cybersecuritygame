@@ -19,12 +19,14 @@
       this.Property = this.$route.query.Property
       this.Bag = this.$route.query.Bag
       this.car = this.$route.query.car
+      this.house = this.$route.query.house
     },
     data() {
       return {
         username: '',
         Bag: '',
         car: '',
+        house: '',
         position: 'test',
         money: 0,
         Property: 0,
@@ -41,6 +43,7 @@
             Property: this.Property,
             Bag: this.Bag,
             car: this.car,
+            house: this.house,
           }
         })
       },

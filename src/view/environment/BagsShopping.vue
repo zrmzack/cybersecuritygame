@@ -61,8 +61,8 @@ export default {
       })
     },
     buy1: function () {
-      if (this.Property >= 4000) {
-        this.Property -= 4000
+      if (this.Property >= 2000) {
+        this.Property -= 2000
         this.$router.push({
           path: '/shoppingOnline',
           query: {
@@ -76,8 +76,8 @@ export default {
       }
     },
     buy2: function () {
-      if (this.Property >= 5000) {
-        this.Property -= 5000
+      if (this.Property >= 2500) {
+        this.Property -= 2500
         this.$router.push({
           path: '/shoppingOnline',
           query: {
@@ -91,8 +91,8 @@ export default {
       }
     },
     buy3: function () {
-      if (this.Property >= 6000) {
-        this.Property -= 6000
+      if (this.Property >= 3000) {
+        this.Property -= 3000
         this.$router.push({
           path: '/shoppingOnline',
           query: {
@@ -106,8 +106,8 @@ export default {
       }
     },
     buy4: function () {
-      if (this.Property >= 6500) {
-        this.Property -= 6500
+      if (this.Property >= 3500) {
+        this.Property -= 3500
         this.$router.push({
           path: '/shoppingOnline',
           query: {

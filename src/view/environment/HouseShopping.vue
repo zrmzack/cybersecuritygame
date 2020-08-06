@@ -2,26 +2,26 @@
   <div class="center-in-center">
     <div class="show">
       <div>
-        <img src="../../assets/lv.jpeg" alt="">
+        <img src="../../assets/home1.png" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
-        4000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        15000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy1">Buy</el-button></span>
       </div>
 
-      <div><img src="../../assets/burberry.jpeg" alt="">
+      <div><img src="../../assets/home2.png" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
-        5000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        14000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy2">Buy</el-button></span>
       </div>
-      <div><img src="../../assets/coach.jpeg" alt="">
+      <div><img src="../../assets/home3.png" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
-        6000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        12000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
         <span> <el-button roundstyle="font-size: 18px" @click="buy3">Buy</el-button></span>
       </div>
-      <div><img src="../../assets/mcm.png" alt="">
+      <div><img src="../../assets/home4.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
-        6500&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        10000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy4">Buy</el-button></span>
       </div>
     </div>
@@ -48,13 +48,14 @@ export default {
       Property: 0,
       Bag: '',
       car: '',
+      house: '',
     }
   },
   methods: {
     add: function () {
       this.Property += 1000;
       this.$router.push({
-        path: '/shoppingOnline',
+        path: '/projectOneToRepass',
         query: {
           username: this.username,
           money: this.money,
@@ -62,69 +63,75 @@ export default {
           Property: this.Property,
           Bag: this.Bag,
           car: this.car,
+          house: '',
         }
       })
     },
     buy1: function () {
-      if (this.Property >= 4000) {
-        this.Property -= 4000
+      if (this.Property >= 15000) {
+        this.Property -= 15000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/projectOneToRepass',
           query: {
             username: this.username,
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'LV',
-            car: '',
+            Bag: this.Bag,
+            car: this.car,
+            house: 'Pool Villa',
+
           }
         })
       }
     },
     buy2: function () {
-      if (this.Property >= 5000) {
-        this.Property -= 5000
+      if (this.Property >= 14000) {
+        this.Property -= 14000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/projectOneToRepass',
           query: {
             username: this.username,
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'Burberry',
-            car: '',
+            Bag: this.Bag,
+            car: this.car,
+            house: 'Common House',
           }
         })
       }
     },
     buy3: function () {
-      if (this.Property >= 6000) {
-        this.Property -= 6000
+      if (this.Property >= 12000) {
+        this.Property -= 12000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/projectOneToRepass',
           query: {
             username: this.username,
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'Coach',
-            car: 'Coach'
+            car: this.car,
+            Bag: this.Bag,
+            house: 'Luxury House',
           }
         })
       }
     },
     buy4: function () {
-      if (this.Property >= 6500) {
-        this.Property -= 6500
+      if (this.Property >= 10000) {
+        this.Property -= 10000
         this.$router.push({
-          path: '/shoppingOnline',
+          path: '/projectOneToRepass',
           query: {
             username: this.username,
             money: this.money,
             position: this.position,
             Property: this.Property,
-            Bag: 'MCM',
-            car: 'MCM',
+            car: this.car,
+            Bag: this.Bag,
+            house: 'Apartment',
           }
         })
       }

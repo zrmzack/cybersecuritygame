@@ -59,6 +59,7 @@ export default {
     this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
+    this.house = this.$route.query.house
   },
   data() {
     return {
@@ -68,6 +69,7 @@ export default {
       position: 'test',
       money: 0,
       Property: 0,
+      house: '',
     }
   },
   methods: {
@@ -80,9 +82,10 @@ export default {
           username: this.username,
           money: this.money,
           position: this.position,
-          Property: this.position,
+          Property: this.Property,
           Bag: this.Bag,
           car: this.car,
+          house: this.house,
         }
       })
     },
@@ -94,9 +97,10 @@ export default {
           username: this.username,
           money: this.money,
           position: this.position,
-          Property: this.position,
+          Property: this.Property,
           Bag: this.Bag,
           car: this.car,
+          house: this.house,
         }
       })
     },

@@ -4,7 +4,9 @@
       <h2>
         Congratulations, you have meet some working scenarios. You have got the following things. <br>
         Bag: <span style="color: red">{{Bag}}</span><br>
-        Car: <span style="color: red">{{car}}</span>
+        Car: <span style="color: red">{{car}}</span><br>
+        House: <span style="color: red">{{house}}</span><br>
+        Property: <span style="color: red">¥{{Property}}</span><br>
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -20,11 +22,13 @@ export default {
     this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
+    this.house = this.$route.query.house
   },
   data() {
     return {
       username: '',
       Bag: '',
+      house: '',
       car: '',
       position: 'test',
       money: 0,

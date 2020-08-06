@@ -34,7 +34,7 @@
       add: function () {
         this.Property+=1000;
         this.$router.push({
-          path: '/projectOneToRepass',
+          path: '/HouseShopping',
           query: {
             username: this.username,
             money: this.money,
