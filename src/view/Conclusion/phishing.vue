@@ -2,55 +2,48 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Congratulations, you have meet some working scenarios. You have got the following things. <br>
-        Bag: <span style="color: red">{{Bag}}</span><br>
-        Car: <span style="color: red">{{car}}</span><br>
-        House: <span style="color: red">{{house}}</span><br>
-        Property: <span style="color: red">¥{{Property}}</span><br>
+        Phishing email always contains some mis-spellings. Normally, they will pretend some big companies and ask you
+        some personal information(bank information). Now, recognize the only one authenticated link.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
 </template>
+
 <script>
 export default {
-  name: "Finish",
+  name: "conclusion",
   created() {
     this.username = this.$route.query.username
     this.money = this.$route.query.money
-    this.position = this.$route.query.position
     this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
-    this.house = this.$route.query.house
   },
   data() {
     return {
       username: '',
-      Bag: '',
-      house: '',
-      car: '',
-      position: 'test',
+      position: 'Middle Programmer',
       money: 0,
-      Property: 0,
+      Property: 3000,
+      Bag: '',
+      car: '',
     }
   },
   methods: {
     add: function () {
       this.$router.push({
-        path: '/conclusion',
+        path: '/phishingLink',
         query: {
           username: this.username,
           money: this.money,
           position: this.position,
-          car: this.car,
-          Bag: this.Bag,
-          house: this.house,
           Property: this.Property,
+          Bag: this.Bag,
+          car: this.car,
         }
       })
     },
-
   },
 }
 </script>

@@ -1,63 +1,57 @@
+
+
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h2>
-        Congratulations, you have meet some working scenarios. You have got the following things. <br>
-        Bag: <span style="color: red">{{Bag}}</span><br>
-        Car: <span style="color: red">{{car}}</span><br>
-        House: <span style="color: red">{{house}}</span><br>
-        Property: <span style="color: red">¥{{Property}}</span><br>
-      </h2>
+      <h1>
+        You was attacked!!!!
+      </h1>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
 </template>
+
 <script>
 export default {
-  name: "Finish",
+  name: "attacked",
   created() {
     this.username = this.$route.query.username
     this.money = this.$route.query.money
-    this.position = this.$route.query.position
     this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
-    this.house = this.$route.query.house
   },
   data() {
     return {
       username: '',
-      Bag: '',
-      house: '',
-      car: '',
-      position: 'test',
+      position: 'Middle Programmer',
       money: 0,
-      Property: 0,
+      Property: 3000,
+      Bag: '',
+      car: '',
     }
   },
   methods: {
     add: function () {
-      this.$router.push({
-        path: '/conclusion',
-        query: {
-          username: this.username,
-          money: this.money,
-          position: this.position,
-          car: this.car,
-          Bag: this.Bag,
-          house: this.house,
-          Property: this.Property,
-        }
-      })
+      // this.$router.push({
+      //   path: '/strongPassword',
+      //   query: {
+      //     username: this.username,
+      //     money: this.money,
+      //     position: this.position,
+      //     Property: this.Property,
+      //     Bag: this.Bag,
+      //     car: this.car,
+      //   }
+      // })
     },
-
   },
 }
 </script>
 <style scoped>
 .show {
   text-align: center;
-  height: 600px;
+  height: 300px;
   line-height: 50px;
   width: 650px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
