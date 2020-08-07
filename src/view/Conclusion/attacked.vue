@@ -33,17 +33,12 @@ export default {
   },
   methods: {
     add: function () {
-      // this.$router.push({
-      //   path: '/strongPassword',
-      //   query: {
-      //     username: this.username,
-      //     money: this.money,
-      //     position: this.position,
-      //     Property: this.Property,
-      //     Bag: this.Bag,
-      //     car: this.car,
-      //   }
-      // })
+      this.$router.push({
+        path: '/phishing',
+        query: {
+
+        }
+      })
     },
   },
 }

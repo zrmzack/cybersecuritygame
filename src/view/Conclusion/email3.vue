@@ -1,24 +1,30 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h2>
-        Phishing link are very similar with simbox. Normally, they will pretend some big companies and trick you
-        click the link. Now, recognize the only one authenticated link.
-      </h2>
+      <h3>
+        From: sheffield.ac.uk<br><br><br>
+        Hi,
+        Congratulations on your graduation! As Covd-19, you may not return school for your graduation ceremony.
+        <el-button round>Get it</el-button>
+        <br>
+
+        <br>
+        <div>
+          <span> <el-button round class="left">Phishing</el-button></span> <span> <el-button round @click="right"
+                                                                                             class="right">Get it</el-button></span>
+        </div>
+
+
+      </h3>
+
     </div>
-    <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "conclusion",
+  name: "email2",
   created() {
-    this.username = this.$route.query.username
-    this.money = this.$route.query.money
-    this.Property = this.$route.query.Property
-    this.Bag = this.$route.query.Bag
-    this.car = this.$route.query.car
   },
   data() {
     return {
@@ -31,17 +37,15 @@ export default {
     }
   },
   methods: {
-    add: function () {
+    left: function () {
       this.$router.push({
-        path: '/phishingLink',
-        query: {
-          username: this.username,
-          money: this.money,
-          position: this.position,
-          Property: this.Property,
-          Bag: this.Bag,
-          car: this.car,
-        }
+        path: '/email3',
+
+      })
+    },
+    right: function () {
+      this.$router.push({
+        path: '/emailAttack2',
       })
     },
   },
@@ -49,10 +53,8 @@ export default {
 </script>
 <style scoped>
 .show {
-  text-align: center;
-  height: 600px;
+  text-align: left;
   line-height: 50px;
-  width: 650px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   border-style: solid;
@@ -69,12 +71,21 @@ export default {
 
 }
 
-.next {
+.right {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 80px;
   height: 60px;
-  width: 150px;
+  width: 285px;
+  font-size: 30px;
+}
+
+.left {
+  position: fixed;
+  bottom: 40px;
+  left: 80px;
+  height: 60px;
+  width: 200px;
   font-size: 30px;
 }
 

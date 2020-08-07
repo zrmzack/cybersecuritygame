@@ -2,8 +2,10 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Normally, Brute force is a common way of guessing user names, passwords, and card Numbers. So, create a strong
-        password is a nice way to avoid this attack. Now, create 3 strong passwords to 'Phishing email' tips.
+        Normally, Brute force is a common way of guessing user names, passwords, and card Numbers. If someone only use
+        numbers to create a password. If the length is 8,
+        computer only use 1 seconds to try 10^8 to guess your password. Now, using upper cases, lower cases, numbers, special
+        characters to create a strong password.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -33,7 +35,7 @@ export default {
   methods: {
     add: function () {
       this.$router.push({
-        path: '/phishing',
+        path: '/Createpassword',
         query: {
           username: this.username,
           money: this.money,
@@ -50,7 +52,7 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 600px;
+  height: 700px;
   line-height: 50px;
   width: 650px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

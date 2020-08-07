@@ -1,24 +1,21 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h2>
-        Phishing link are very similar with simbox. Normally, they will pretend some big companies and trick you
-        click the link. Now, recognize the only one authenticated link.
-      </h2>
+      <h3>
+        Your computer may be injected with scripts！ That is phishing email Check the email address, sheffield.ac.cn is
+        fake address!! Normally, .ac.uk is the educational address ending in
+        UK.
+      </h3>
+
     </div>
-    <el-button type="info" round @click="add" class="next"> Next</el-button>
+    <el-button @click="add" class="right">Next</el-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "conclusion",
+  name: "email1",
   created() {
-    this.username = this.$route.query.username
-    this.money = this.$route.query.money
-    this.Property = this.$route.query.Property
-    this.Bag = this.$route.query.Bag
-    this.car = this.$route.query.car
   },
   data() {
     return {
@@ -33,7 +30,7 @@ export default {
   methods: {
     add: function () {
       this.$router.push({
-        path: '/phishingLink',
+        path: '/email2',
         query: {
           username: this.username,
           money: this.money,
@@ -50,13 +47,13 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 600px;
   line-height: 50px;
-  width: 650px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   border-style: solid;
   margin: auto;
+  height: 350px;
+  width: 650px;
   position: absolute;
   top: 0;
   left: 0;
@@ -69,12 +66,12 @@ export default {
 
 }
 
-.next {
+.right {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 80px;
   height: 60px;
-  width: 150px;
+  width: 285px;
   font-size: 30px;
 }
 

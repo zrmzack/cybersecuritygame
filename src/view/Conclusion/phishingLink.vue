@@ -37,7 +37,7 @@ export default {
   methods: {
     choose1: function () {
       this.$router.push({
-        path: '/attacked',
+        path: '/baidu',
         query: {
 
         }
@@ -45,7 +45,7 @@ export default {
     },
     choose2: function () {
       this.$router.push({
-        path: '/attacked',
+        path: '/google',
         query: {
         }
       })
@@ -58,12 +58,12 @@ export default {
       })
     },
     choose4: function () {
-      // this.$router.push({
-      //   path: '/attacked',
-      //   query: {
-      //
-      //   }
-      // })
+      this.$router.push({
+        path: '/phishingEmail',
+        query: {
+
+        }
+      })
     },
     choose5: function () {
       this.$router.push({

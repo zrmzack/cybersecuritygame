@@ -2,8 +2,8 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Phishing link are very similar with simbox. Normally, they will pretend some big companies and trick you
-        click the link. Now, recognize the only one authenticated link.
+        Phishing email always have some mis-spellings. Normally, they will pretend some big companies or some of your friends and send you
+        an email, which contain a link or some attachment. Now, distinguish the Phishing email.
       </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -14,34 +14,18 @@
 export default {
   name: "conclusion",
   created() {
-    this.username = this.$route.query.username
-    this.money = this.$route.query.money
-    this.Property = this.$route.query.Property
-    this.Bag = this.$route.query.Bag
-    this.car = this.$route.query.car
+
   },
   data() {
     return {
-      username: '',
-      position: 'Middle Programmer',
-      money: 0,
-      Property: 3000,
-      Bag: '',
-      car: '',
+
     }
   },
   methods: {
     add: function () {
       this.$router.push({
-        path: '/phishingLink',
-        query: {
-          username: this.username,
-          money: this.money,
-          position: this.position,
-          Property: this.Property,
-          Bag: this.Bag,
-          car: this.car,
-        }
+        path: '/email1',
+
       })
     },
   },

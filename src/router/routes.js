@@ -59,6 +59,13 @@ import Createpassword from "@/view/Conclusion/Createpassword";
 import phishing from "@/view/Conclusion/phishing";
 import phishingLink from "@/view/Conclusion/phishingLink";
 import attacked from "@/view/Conclusion/attacked";
+import baidu from "@/view/Conclusion/baidu";
+import google from "@/view/Conclusion/google";
+import email1 from "@/view/Conclusion/email1";
+import phishingEmail from "@/view/Conclusion/phishingEmail";
+import emailAttack1 from "@/view/Conclusion/emailAttack1";
+import email2 from "@/view/Conclusion/email2";
+import emailAttack2 from "@/view/Conclusion/emailAttack2";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
     {path: "/", component: index},
@@ -123,4 +130,12 @@ export default [
     {path: "/phishing", component: phishing},
     {path: "/phishingLink", component: phishingLink},
     {path: "/attacked", component: attacked},
+    {path: "/baidu", component: baidu},
+    {path: "/google", component: google},
+    {path: "/email1", component: email1},
+    {path: "/phishingEmail", component: phishingEmail},
+    {path: "/emailAttack1", component: emailAttack1},
+    {path: "/email2", component: email2},
+    {path: "/emailAttack2", component: emailAttack2},
+
 ]

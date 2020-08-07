@@ -28,6 +28,7 @@
            id="password6" type="text" name="Password2" @keyup="checkPassword3()"
            v-model="pwd6"/>
     <br>
+    <p v-show="passwordAlert2">Input a Strong password</p>
     <el-button class="login_btn" type="button" @click="jump()">Next</el-button>
   </div>
 </template>
@@ -46,14 +47,13 @@ export default {
       pwd4: '',
       pwd5: '',
       pwd6: '',
-      passwordAlert1: false,
-      passwordAlert2: false,
-      passwordAlert3: false
+      passwordAlert1: true,
+      passwordAlert2: true,
+      passwordAlert3: true
     }
   },
   methods: {
     checkPassword1() {
-      console.log(this.pwd1)
       if (this.pwd1 === this.pwd2) {
         if (this.pwd1.length < 8) {
           this.passwordAlert1 = true
@@ -99,6 +99,7 @@ export default {
     },
     jump() {
       if (this.passwordAlert3 == false && this.passwordAlert1 == false && this.passwordAlert2 == false) {
+
         this.$router.push({path: '/phishing'})
       }
 
