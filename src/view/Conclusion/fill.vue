@@ -2,11 +2,10 @@
   <div class="center-in-center">
     <div class="show">
       <h2>
-        Now, you must know how to distinguish some phishing emails. Next, fill your email address, you will get an
-        email. Be awareness it, it could be phishing, it could be real.
+        Now, you must know how to distinguish some phishing emails.
       </h2>
     </div>
-    <el-button type="info" round @click="add" class="next"> Next</el-button>
+<!--    <el-button type="info" round @click="add" class="next"> Next</el-button>-->
   </div>
 </template>
 
@@ -32,17 +31,17 @@ export default {
   },
   methods: {
     add: function () {
-      this.$router.push({
-        path: '/strongPassword',
-        query: {
-          username: this.username,
-          money: this.money,
-          position: this.position,
-          Property: this.Property,
-          Bag: this.Bag,
-          car: this.car,
-        }
-      })
+      // this.$router.push({
+      //   path: '/strongPassword',
+      //   query: {
+      //     username: this.username,
+      //     money: this.money,
+      //     position: this.position,
+      //     Property: this.Property,
+      //     Bag: this.Bag,
+      //     car: this.car,
+      //   }
+      // })
     },
   },
 }
