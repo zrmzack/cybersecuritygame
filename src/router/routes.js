@@ -1,5 +1,6 @@
 //这里就可以引用你要显示的页面了
 import index from '@/view/login/index.vue'
+import LoseAll from "@/view/Conclusion/LoseAll";
 import intro from '@/view/login/intro.vue'
 import alert from "@/view/login/alert"
 import password from "@/view/login/password";
@@ -66,6 +67,9 @@ import phishingEmail from "@/view/Conclusion/phishingEmail";
 import emailAttack1 from "@/view/Conclusion/emailAttack1";
 import email2 from "@/view/Conclusion/email2";
 import emailAttack2 from "@/view/Conclusion/emailAttack2";
+import socailFreshManWrong2 from "@/view/wrong/socailFreshManWrong2";
+import email3 from "@/view/Conclusion/email3";
+import fill from "@/view/Conclusion/fill";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
     {path: "/", component: index},
@@ -137,5 +141,8 @@ export default [
     {path: "/emailAttack1", component: emailAttack1},
     {path: "/email2", component: email2},
     {path: "/emailAttack2", component: emailAttack2},
-
+    {path: "/socailFreshManWrong2", component: socailFreshManWrong2},
+    {path: "/email3", component: email3},
+    {path: "/LoseAll", component: LoseAll},
+    {path: "/fill", component: fill},
 ]

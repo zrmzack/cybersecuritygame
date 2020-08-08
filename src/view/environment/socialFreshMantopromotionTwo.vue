@@ -16,9 +16,10 @@
     created() {
       this.username = this.$route.query.username
       this.money = this.$route.query.money
-      this.Property = this.$route.query.Property
       this.Bag = this.$route.query.Bag
       this.car = this.$route.query.car
+      this.Property = this.$route.query.Property
+
     },
     data() {
       return {

@@ -36,7 +36,7 @@
     methods: {
       add: function () {
         this.$router.push({
-          path: '/businessTosocialAttach',
+          path: '/businessToSocialAttach',
           query: {
             username: this.username,
             money: this.money,

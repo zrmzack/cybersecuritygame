@@ -72,7 +72,7 @@ export default {
       this.money += 10;
       this.Property+=2000;
       this.$router.push({
-        path: '/businessToSocailAttach',
+        path: '/businessToSocialAttach',
         query: {
           username: this.username,
           money: this.money,

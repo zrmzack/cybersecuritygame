@@ -4,14 +4,16 @@
       <h3>
         From: sheffield.ac.uk<br><br><br>
         Hi,
-        Congratulations on your graduation! As Covd-19, you may not return school for your graduation ceremony.
-        <el-button round>Get it</el-button>
+        Congratulations on your graduation! As Covd-19, you may not return school for your graduation ceremony. At the
+        same time, we will send your diploma according to the address you fill in。
+        <el-button round>Fill</el-button>
         <br>
 
         <br>
         <div>
-          <span> <el-button round class="left">Phishing</el-button></span> <span> <el-button round @click="right"
-                                                                                             class="right">Get it</el-button></span>
+          <span> <el-button round class="left" @click="left">Phishing</el-button></span> <span> <el-button round
+                                                                                                           @click="right"
+                                                                                                           class="right">Fill</el-button></span>
         </div>
 
 
@@ -39,13 +41,12 @@ export default {
   methods: {
     left: function () {
       this.$router.push({
-        path: '/email3',
-
+        path: '/LoseAll',
       })
     },
     right: function () {
       this.$router.push({
-        path: '/emailAttack2',
+        path: '/fill',
       })
     },
   },

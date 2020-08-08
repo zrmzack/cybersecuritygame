@@ -11,7 +11,7 @@
 
         <br>
         <div>
-          <span> <el-button round class="left">Phishing</el-button></span> <span> <el-button round @click="right"
+          <span> <el-button round class="left" @click="left">Phishing</el-button></span> <span> <el-button round @click="right"
                                                                                              class="right">Get it</el-button></span>
         </div>
 

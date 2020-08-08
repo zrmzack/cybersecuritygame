@@ -13,7 +13,7 @@
 
         <br>
         <div>
-          <span> <el-button round class="left">Phishing</el-button></span> <span> <el-button round @click="right"
+          <span> <el-button round class="left" @click="left">Phishing</el-button></span> <span> <el-button round @click="right"
                                                                                              class="right">Provide Feedback</el-button></span>
         </div>
 
@@ -42,8 +42,7 @@ export default {
   methods: {
     left: function () {
       this.$router.push({
-        path: '/emailAttack1',
-
+        path: '/email2',
       })
     },
     right: function () {

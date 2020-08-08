@@ -1,49 +1,46 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h1>It is better to turn off some permissions for some software. Especially some software that involve a lot of
-        money </h1>
+      <h2>
+        Meanwhile, the boss also give you a promotion because of your technical ability. You are Senior Programmer now.
+        You can buy a house now.
+      </h2>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
-
 </template>
-
-
 <script>
 export default {
-  name: "aliPayWrong",
+  name: "socailFreshManWrong2",
   created() {
-    console.log(this.$route.query.username)
     this.username = this.$route.query.username
     this.money = this.$route.query.money
-    this.position = this.$route.query.position
+    this.Property = this.$route.query.Property / 2
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
-    this.Property = this.$route.query.Property
   },
-
   data() {
     return {
       username: '',
       Bag: '',
       car: '',
-      position: 'test',
+      position: 'Senior Programmer',
       money: 0,
       Property: 0,
+
     }
   },
   methods: {
     add: function () {
       this.$router.push({
-        path: '/alipayToEmailAttack',
+        path: '/HouseShopping',
         query: {
           username: this.username,
+          money: this.money,
           Bag: this.Bag,
           car: this.car,
-          money: this.money,
           position: this.position,
-          Property: this.Property,
+          Property: this.Property
         }
       })
     },
@@ -51,7 +48,6 @@ export default {
   },
 }
 </script>
-
 <style scoped>
 .show {
   text-align: center;
