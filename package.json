@@ -7,8 +7,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "core-js": "^2.6.5",
+    "eagle.js": "^0.6.1",
     "element-ui": "^2.13.2",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
     "vue": "^2.6.10",
     "vue-router": "^3.3.4"
   },

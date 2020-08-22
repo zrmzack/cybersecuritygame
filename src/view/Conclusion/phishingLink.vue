@@ -1,6 +1,7 @@
 <template>
   <div class="center-in-center">
     <div class="show">
+      <br>
       <a> https://www.baidus.com/&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><button round
                                                                                                                 @click="choose1">select</button></span>
       </a>
@@ -8,18 +9,12 @@
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><button round
                                                                                        @click="choose2">select</button></span>
       </a>
-      <a>https://www.westernunions.com/
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><button round
-                                                                                       @click="choose3">select</button></span>
-      </a>
+
       <a>https://www.sheffield.ac.uk/
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><button round
                                                                                        @click="choose4">select</button></span>
       </a>
-      <a>https://www.youtubes.com/
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><button round
-                                                                                       @click="choose5">select</button></span>
-      </a>
+
     </div>
   </div>
 </template>

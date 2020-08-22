@@ -13,8 +13,6 @@
   export default {
     name: 'app',
     components: {
-      HelloWorld,
-      Login
     },
 
   }

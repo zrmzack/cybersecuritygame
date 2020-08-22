@@ -56,7 +56,6 @@ import businessToSocialAttach from "@/view/environment/businessToSocialAttach";
 import HouseShopping from "@/view/environment/HouseShopping";
 import conclusion from "@/view/Conclusion/conclusion";
 import strongPassword from "@/view/Conclusion/strongPassword";
-import Createpassword from "@/view/Conclusion/Createpassword";
 import phishing from "@/view/Conclusion/phishing";
 import phishingLink from "@/view/Conclusion/phishingLink";
 import attacked from "@/view/Conclusion/attacked";
@@ -70,9 +69,11 @@ import emailAttack2 from "@/view/Conclusion/emailAttack2";
 import socailFreshManWrong2 from "@/view/wrong/socailFreshManWrong2";
 import email3 from "@/view/Conclusion/email3";
 import fill from "@/view/Conclusion/fill";
+import star from "@/view/starbuk/star";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
     {path: "/", component: index},
+    {path: "/star", component: star},
     {path: "/intro", component: intro},
     {path: "/alert", component: alert},
     {path: "/aliPay", component: aliPay},
@@ -130,7 +131,6 @@ export default [
     {path: "/HouseShopping", component: HouseShopping},
     {path: "/conclusion", component: conclusion},
     {path: "/strongPassword", component: strongPassword},
-    {path: "/Createpassword", component: Createpassword},
     {path: "/phishing", component: phishing},
     {path: "/phishingLink", component: phishingLink},
     {path: "/attacked", component: attacked},

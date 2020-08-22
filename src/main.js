@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import Eagle from 'eagle.js'
+// import animate.css for slide transition
+import 'animate.css'
+
+Vue.use(Eagle)
 Vue.use(ElementUI);
 Vue.config.productionTip = false
 
