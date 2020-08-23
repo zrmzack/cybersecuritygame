@@ -126,7 +126,9 @@ export default {
   margin: auto;
 
 }
-
+h1{
+  font-size: 50px;
+}
 .header {
   text-align: center;
   line-height: 80px;

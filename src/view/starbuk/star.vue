@@ -8,8 +8,8 @@
 							<div class="accountbtn menubtn account">
 								<h1>Join now or Sign in 🌟 </h1>
 								<ul>
-									<li >
-										<a class="{'active-menu':curActive == 'login'}" >
+									<li>
+										<a class="{'active-menu':curActive == 'login'}">
 											Sign in
 										</a>
 									</li>
@@ -81,6 +81,15 @@ import FormLogin from '@/components/formLogin'
 
 export default {
   name: 'account',
+  created() {
+    this.username = this.$route.query.username
+    this.money = this.$route.query.money
+    this.position = this.$route.query.position
+    this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
+    this.car = this.$route.query.car
+    this.house = this.$route.query.house
+  },
   metaInfo: {
     title: '星享俱乐部',
     titleTemplate: '%s | 星巴克',
@@ -95,13 +104,20 @@ export default {
       }
     ]
   },
-  data(){
+  data() {
     return {
       show_menu_bol: false,
       lgMedia: window.matchMedia('(min-width: 1025px)').matches,
       curActive: 'login',
       view: 'FormLogin',
-      showFormLogin: true
+      showFormLogin: true,
+      username: '',
+      Bag: '',
+      car: '',
+      house: '',
+      position: 'test',
+      money: 0,
+      Property: 0,
     }
   },
 
@@ -109,6 +125,22 @@ export default {
     NavContainer: NavContainer,
     FormLogin: FormLogin,
   },
+  methods: {
+    submit: function () {
+      this.$router.push({
+        path: '/starWrong',
+        query: {
+          username: this.username,
+          Bag: this.Bag,
+          car: this.car,
+          house: this.house,
+          money: this.money,
+          position: this.position,
+          Property: this.Property
+        }
+      })
+    }
+  }
 }
 
 </script>

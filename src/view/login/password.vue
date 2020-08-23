@@ -9,18 +9,18 @@
     <p v-show="usernameAlert">Input a valid username</p>
     <br>
     <!--            <label for="password1">Password</label>-->
-    <input class="qxs-ic_password qxs-icon" placeholder="Password" id="password1" type="text" name="password1"
+    <input class="qxs-ic_password qxs-icon" placeholder="Password" id="password1" type="password" name="password1"
            v-model="pwd1" @keyup="checkPassword()"/>
     <br>
     <!--            <label for="password2">Confirm Password</label>-->
     <input class=" qxs-ic_confirm qxs-icon" placeholder="Confirm Password"
-           id="password2" type="text" name="Password2" @keyup="checkPassword()"
+           id="password2" type="password" name="Password2" @keyup="checkPassword()"
            v-model="pwd2"/>
     <p v-show="passwordAlertnotsame">Input the same password</p>
     <p v-show="nicePasswordAlert">You have a nice password!! Now start game</p>
-    <p v-show="securityAlert">Combine numbers, uppercases, lowcases and special </p>
+    <p v-show="securityAlert">Combine numbers, uppercases, lowcases and special characters</p>
     <p style="color: red" v-show="passwordAlertShort">Your password is too short, it can be brute force quickly!(use
-      lowcases and upcases and numbers together</p>
+      lowcases, uppercases, numbers and special characters together</p>
     <br>
     <el-button class="login_btn" type="button" @click="jump()">Start</el-button>
 

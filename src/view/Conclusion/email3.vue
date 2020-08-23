@@ -11,7 +11,7 @@
 
         <br>
         <div>
-          <span> <el-button round class="left" @click="left">Phishing</el-button></span> <span> <el-button round
+          <span> <el-button round class="left" @click="left">Ignore</el-button></span> <span> <el-button round
                                                                                                            @click="right"
                                                                                                            class="right">Fill</el-button></span>
         </div>
@@ -46,7 +46,7 @@ export default {
     },
     right: function () {
       this.$router.push({
-        path: '/fill',
+        path: '/Finish2',
       })
     },
   },
@@ -68,7 +68,7 @@ export default {
   font-size: 28px;
   color: white;
   line-height: 60px;
-
+height: 300px;
 
 }
 

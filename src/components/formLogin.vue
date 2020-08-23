@@ -10,7 +10,7 @@
 			<div class="toggle-password"></div>
 		</div>
 		<div class="login-action button">
-			<a>Sign in</a>
+			<a @click="submit">Sign in</a>
 		</div>
 	</div>
 </template>
@@ -18,7 +18,13 @@
 <script>
 
 export default {
-
-	}
+  methods:{
+    submit: function (){
+      this.$router.push({
+        path: '/starWrong',
+      })
+    }
+  }
+}
 
 </script>

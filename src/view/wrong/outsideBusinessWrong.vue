@@ -2,7 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h1>
-        donot talk with any company information outside, or those data will be leaked.
+        Do not talk with any company information outside, or those data will be leaked.
 
       </h1>
     </div>
@@ -67,11 +67,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 28px;
+  font-size: 50px;
   color: white;
   line-height: 60px;
 
-
+height: 250px;
 }
 
 .next {

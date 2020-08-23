@@ -3,7 +3,7 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h2>
+      <h2 style="font-size: 50px">
         As you ignore the email, you can not receive your diploma. Be attention to the email address.
       </h2>
     </div>
@@ -34,7 +34,7 @@ export default {
   methods: {
     add: function () {
       this.$router.push({
-        path: '/fill',
+        path: '/Finish2',
         query: {
           username: this.username,
           money: this.money,

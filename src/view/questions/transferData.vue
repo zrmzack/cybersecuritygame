@@ -20,17 +20,20 @@
       <div class="form-wrapper">
         <div class="question">
 
-          <p style="border-style: solid ;font-size: 30px ;background-color: white">When you transfer data, you want to
-            go washing room. What should you do?</p>
+          <p style="border-style: solid ;font-size: 30px ;background-color: white">You find that your computer always has a background program running, although it does not interfere with your normal use of the computer, how should you handle this situation？</p>
           <div class="answer">
             <div>
-              <el-button round @click="next" style="font-size: 18px">Go toilet directly, let transfer data
-                automatically
+              <el-button round @click="next" style="font-size: 18px">Ask your workmate to check it
               </el-button>
             </div>
             <br>
             <div>
-              <el-button round @click="add" style="font-size: 18px">Stop transferring data and lock your computer
+              <el-button round @click="next" style="font-size: 18px">Ignore it
+              </el-button>
+            </div>
+            <br>
+            <div>
+              <el-button round @click="add" style="font-size: 18px">Tell the company's technical team
               </el-button>
             </div>
           </div>
@@ -106,7 +109,9 @@ export default {
   display: block;
   height: 100%;
 }
-
+h1{
+  font-size: 50px;
+}
 .w {
   width: 1200px;
   margin: auto;
@@ -153,5 +158,8 @@ li {
 .answer {
   padding-top: 30px;
 
+}
+h1{
+  font-size: 50px;
 }
 </style>

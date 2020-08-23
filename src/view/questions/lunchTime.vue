@@ -99,7 +99,9 @@ export default {
   margin: 0;
   padding: 0;
 }
-
+ h1{
+  font-size: 50px;
+}
 .whole {
   background: url("../../assets/work1.jpg");
   background-size: 100% 100%;

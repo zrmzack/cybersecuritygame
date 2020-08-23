@@ -36,7 +36,7 @@
     methods: {
       add: function () {
         this.$router.push({
-          path: '/fireDataToWindowpop',
+          path: '/Finish',
           query: {
             username: this.username,
             money: this.money,
@@ -66,10 +66,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 28px;
+  font-size: 50px;
   color: white;
   line-height: 60px;
-
+height: 400px;
 
 }
 

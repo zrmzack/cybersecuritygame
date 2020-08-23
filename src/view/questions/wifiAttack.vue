@@ -131,7 +131,9 @@ export default {
   font-size: 25px;
 
 }
-
+h1{
+  font-size: 50px;
+}
 .score ul li a {
   display: block;
   height: 80px;

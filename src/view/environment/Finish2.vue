@@ -1,32 +1,29 @@
 <template>
   <div class="center-in-center">
     <div class="show">
-      <h1>It is better to turn off some permissions for some software. Especially some software that involve a lot of
-        money </h1>
+      <h2>
+        Congratulations, you must learn a lot from the game! <br>
+      </h2>
     </div>
-    <el-button type="info" round @click="add" class="next"> Next</el-button>
   </div>
-
 </template>
-
-
 <script>
 export default {
-  name: "aliPayWrong",
+  name: "Finish",
   created() {
-    console.log(this.$route.query.username)
     this.username = this.$route.query.username
     this.money = this.$route.query.money
     this.position = this.$route.query.position
+    this.Property = this.$route.query.Property
     this.Bag = this.$route.query.Bag
     this.car = this.$route.query.car
-    this.Property = this.$route.query.Property
+    this.house = this.$route.query.house
   },
-
   data() {
     return {
       username: '',
       Bag: '',
+      house: '',
       car: '',
       position: 'test',
       money: 0,
@@ -36,13 +33,14 @@ export default {
   methods: {
     add: function () {
       this.$router.push({
-        path: '/alipayToEmailAttack',
+        path: '/fireWalldataToStarbuck',
         query: {
           username: this.username,
-          Bag: this.Bag,
-          car: this.car,
           money: this.money,
           position: this.position,
+          car: this.car,
+          Bag: this.Bag,
+          house: this.house,
           Property: this.Property,
         }
       })
@@ -51,7 +49,6 @@ export default {
   },
 }
 </script>
-
 <style scoped>
 .show {
   text-align: center;
@@ -70,7 +67,7 @@ export default {
   font-size: 50px;
   color: white;
   line-height: 60px;
-
+height: 250px;
 
 }
 

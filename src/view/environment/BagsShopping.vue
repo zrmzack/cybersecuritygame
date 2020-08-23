@@ -128,7 +128,7 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 750px;
+  height: 550px;
   line-height: 50px;
   width: 900px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

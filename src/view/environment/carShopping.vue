@@ -7,17 +7,20 @@
         9000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy1">Buy</el-button></span>
       </div>
-
+      <br>
       <div><img src="../../assets/benchi.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         10000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <span> <el-button roundstyle="font-size: 18px" @click="buy2">Buy</el-button></span>
       </div>
+      <br>
       <div><img src="../../assets/BMW.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
         11000&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
         <span> <el-button roundstyle="font-size: 18px" @click="buy3">Buy</el-button></span>
+        <br>
+        <br>
       </div>
       <div><img src="../../assets/luhu.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
@@ -136,7 +139,7 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 750px;
+  height: 550px;
   line-height: 50px;
   width: 900px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

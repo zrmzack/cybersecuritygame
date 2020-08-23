@@ -70,9 +70,17 @@ import socailFreshManWrong2 from "@/view/wrong/socailFreshManWrong2";
 import email3 from "@/view/Conclusion/email3";
 import fill from "@/view/Conclusion/fill";
 import star from "@/view/starbuk/star";
+import starphishingemail from "@/view/questions/starphishingemail";
+import starWrong from "@/view/wrong/starWrong";
+import fireWalldataToStarbuck from "@/view/environment/fireWalldataToStarbuck";
+import Finish2 from "@/view/environment/Finish2";
 //配置路由，path就是你浏览器地址，component就是跟着你要显示的页面，/表示默认地址。
 export default [
     {path: "/", component: index},
+    {path: "/Finish2", component: Finish2},
+    {path: "/fireWalldataToStarbuck", component: fireWalldataToStarbuck},
+    {path: "/starWrong", component: starWrong},
+    {path: "/starphishingemail", component: starphishingemail},
     {path: "/star", component: star},
     {path: "/intro", component: intro},
     {path: "/alert", component: alert},

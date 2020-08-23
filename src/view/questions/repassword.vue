@@ -5,87 +5,90 @@
         Cybersecurity
       </h1>
     </div>
-    <div class="w">
-      <div class="score">
-        <li style="color: black">
-          <a> Username:{{username}}</a></li>
-        <li style="color: black">
-          <a> Position:{{position}}</a>
-        </li>
-        <li style="color: black">
-          <a> Points:{{money}}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{Property}}</span>
-        </li>
-
-
-      </div>
-      <div class="form-wrapper">
-        <div>
-          <h2>Input your password to protect your vital files.</h2>
-          <input placeholder="input your password" v-model="pwd" @keyup="checkPassword"></input>
+    <center>
+      <div class="w">
+        <div class="score">
+          <li style="color: black">
+            <a> Username:{{ username }}</a></li>
+          <li style="color: black">
+            <a> Position:{{ position }}</a>
+          </li>
+          <li style="color: black">
+            <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{ Property }}</span>
+          </li>
         </div>
-        <el-button round @click="add">next</el-button>
-        <p v-show="passwordAlert" style="color: red">Create a strong password to keep your data safe</p>
       </div>
+    </center>
+    <center>
+    <div class="form-wrapper">
+      <div>
+        <h2>Input your password to protect your vital files.</h2>
+        <input placeholder="input your password" v-model="pwd" type="password" style="width: 300px" @keyup="checkPassword"></input>
+      </div>
+      <el-button round @click="add">next</el-button>
+      <p v-show="passwordAlert" style="color: red">Create a strong password to keep your data safe</p>
     </div>
+    </center>
   </div>
+
 
 </template>
 
 <script>
-  export default {
-    name: "password",
-    created() {
-      console.log(this.$route.query.username)
-      this.username = this.$route.query.username
-      this.money = this.$route.query.money
-      this.position = this.$route.query.position
-      this.Property = this.$route.query.Property
-      this.Bag = this.$route.query.Bag
-      this.car = this.$route.query.car
-      this.house = this.$route.query.house
+export default {
+  name: "password",
+  created() {
+    console.log(this.$route.query.username)
+    this.username = this.$route.query.username
+    this.money = this.$route.query.money
+    this.position = this.$route.query.position
+    this.Property = this.$route.query.Property
+    this.Bag = this.$route.query.Bag
+    this.car = this.$route.query.car
+    this.house = this.$route.query.house
 
-    },
-    data() {
-      return {
-        username: '',
-        position: 'test',
-        money: 0,
-        Property: 0,
-        pwd: '',
-        Bag: '',
-        car: '',
-        house: '',
-        passwordAlert: true,
+  },
+  data() {
+    return {
+      username: '',
+      position: 'test',
+      money: 0,
+      Property: 0,
+      pwd: '',
+      Bag: '',
+      car: '',
+      house: '',
+      passwordAlert: true,
+    }
+  },
+  methods: {
+    checkPassword() {
+      if (this.pwd.length >= 8 && (/.*[a-z]+.*/).test(this.pwd) && (/.*[A-Z]+.*/).test(this.pwd) && (/^[0-9]*/).test(this.pwd)
+          && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd)) {
+        this.passwordAlert = false
       }
     },
-    methods: {
-      checkPassword() {
-        if (this.pwd.length >= 8 && (/.*[a-z]+.*/).test(this.pwd) && (/.*[A-Z]+.*/).test(this.pwd) && (/^[0-9]*/).test(this.pwd)
-            && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd)) {
-          this.passwordAlert = false
-        }
-      },
-      add: function () {
-        console.log(this.pwd)
-        if (this.passwordAlert == false) {
-          this.money += 10;
-          this.Property+=2000;
-          this.$router.push({
-            path: '/projectTwo',
-            query: {
-              username: this.username,
-              money: this.money,
-              position: this.position,
-              Property: this.Property,
-              Bag: this.Bag,
-              car: this.car,
-              house: this.house,
-            }
-          })
-        }
-      },
+    add: function () {
+      console.log(this.pwd)
+      if (this.passwordAlert == false) {
+        this.money += 10;
+        this.Property += 2000;
+        this.$router.push({
+          path: '/projectTwo',
+          query: {
+            username: this.username,
+            money: this.money,
+            position: this.position,
+            Property: this.Property,
+            Bag: this.Bag,
+            car: this.car,
+            house: this.house,
+          }
+        })
+      }
     },
-  }
+  },
+}
 </script>
 
 <style scoped>
@@ -144,9 +147,15 @@ li {
   float: left;
   margin: 0 20px;
 }
-
+h2{
+  font-size: 35px;
+}
 .answer {
   padding-top: 30px;
 
 }
+h1{
+  font-size: 50px;
+}
+
 </style>

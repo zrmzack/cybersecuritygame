@@ -2,8 +2,7 @@
   <div class="center-in-center">
     <div class="show">
       <h1>
-        When you leaving your office desk, you need better to lock your computer! And luckily, you send data to your team
-        leader on time!
+        If you find that your computer may have a virus, disconnect from the network as soon as possible and contact the relevant technical personnel
       </h1>
     </div>
     <el-button type="info" round @click="add" class="next"> Next</el-button>
@@ -63,10 +62,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 28px;
+  font-size: 55px;
   color: white;
   line-height: 60px;
-
+height: 450px;
 
 }
 

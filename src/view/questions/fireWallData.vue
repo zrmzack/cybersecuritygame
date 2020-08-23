@@ -38,8 +38,7 @@
             <br>
             <div>
               <el-button round @click="next" style="font-size: 18px">After you finish transferring data, update the
-                firewall
-                immediately.
+                firewall immediately.
               </el-button>
             </div>
           </div>
@@ -78,7 +77,7 @@ export default {
       this.money += 10;
       this.Property+=2000;
       this.$router.push({
-        path: '/fireDataToWindowpop',
+        path: '/Finish',
         query: {
           username: this.username,
           money: this.money,
@@ -115,7 +114,9 @@ export default {
   margin: 0;
   padding: 0;
 }
-
+h1{
+  font-size: 50px;
+}
 .whole {
   background: url("../../assets/work3.jpg");
   background-size: 100% 100%;
