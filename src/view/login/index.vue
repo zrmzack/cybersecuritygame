@@ -1,11 +1,13 @@
 <template>
     <div id="app1">
+
         <h1 style="color: #efeaf3; font-size: 80px; margin-top: 0; text-align: center;padding-top: calc(5vh)">Cyber
             Security Game</h1>
         <div style="display: flex; width: 100%;height: 100px">
             <el-button class="start" type="primary" plain  @click="gototest()">Start Game</el-button>
 
         </div>
+
     </div>
 </template>
 
@@ -22,7 +24,7 @@
 
 <style scoped>
     @import "css/component.css";
-    #app1{ background-image: url('../../assets/5.jpg');
+    #app1{ background-image: url('../../assets/hack1.jpeg');
         background-size: 100% 100%;
         align-items: center;
         height: calc(100vh);

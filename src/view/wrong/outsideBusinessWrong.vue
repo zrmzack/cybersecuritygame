@@ -68,10 +68,11 @@
   right: 0;
   bottom: 0;
   font-size: 50px;
-  color: white;
+  color: black;
   line-height: 60px;
 
 height: 250px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .next {
@@ -84,7 +85,7 @@ height: 250px;
 }
 
 .center-in-center {
-  background-image: url('../../assets/bk1.jpg');
+  background-image: url('../../assets/show8.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

@@ -14,7 +14,7 @@
             <a> Position:{{ position }}</a>
           </li>
           <li style="color: black">
-            <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{ Property }}</span>
+            <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <a><span> Property: ¥{{ Property }}</span></a>
           </li>
         </div>
       </div>
@@ -22,11 +22,11 @@
     <center>
     <div class="form-wrapper">
       <div>
-        <h2>Input your password to protect your vital files.</h2>
-        <input placeholder="input your password" v-model="pwd" type="password" style="width: 300px" @keyup="checkPassword"></input>
+        <h2>Input a strong password to protect your vital files.</h2>
+        <input placeholder="input a strong password" v-model="pwd" type="password" style="width: 300px" @keyup="checkPassword"></input>
       </div>
       <el-button round @click="add">next</el-button>
-      <p v-show="passwordAlert" style="color: red">Create a strong password to keep your data safe</p>
+      <p v-show="passwordAlert" style="color: red;font-size: 28px">Create a strong password to keep your data safe</p>
     </div>
     </center>
   </div>

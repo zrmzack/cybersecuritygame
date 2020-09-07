@@ -71,7 +71,8 @@
             this.passwordAlertnotsame = false
             this.nicePasswordAlert = false
 
-          } else if (this.pwd1.length >= 8 && (/.*[a-z]+.*/).test(this.pwd1) && (/.*[A-Z]+.*/).test(this.pwd1) && (/^[0-9]*/).test(this.pwd1)
+          } else if (this.pwd1.length >= 8 && (/.*[a-z]+.*/).test(this.pwd1)
+              && (/.*[A-Z]+.*/).test(this.pwd1) && (/^[0-9]*/).test(this.pwd1)
               && (/.*[~!@#$%^&*()_+|<>,.?/:;'\\[\\]+.*/).test(this.pwd1)) {
             this.nicePasswordAlert = true
             this.passwordAlertShort = false

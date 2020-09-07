@@ -63,9 +63,10 @@
   right: 0;
   bottom: 0;
   font-size: 55px;
-  color: white;
+  color: black;
   line-height: 60px;
 height: 450px;
+  background: rgba(255, 255, 255, 0.6);
 
 }
 
@@ -79,7 +80,7 @@ height: 450px;
 }
 
 .center-in-center {
-  background-image: url('../../assets/bk1.jpg');
+  background-image: url('../../assets/show4.jpeg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

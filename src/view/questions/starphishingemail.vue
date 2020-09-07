@@ -11,7 +11,7 @@
 
         <br>
         <div>
-          <span> <el-button round class="left" @click="left">Ignore it</el-button></span> <span> <el-button round
+          <span> <el-button style="color: black" round class="left" @click="left">Ignore it</el-button></span> <span> <el-button round
                                                                                                             @click="right"
                                                                                                             class="right">Get it</el-button></span>
         </div>
@@ -94,10 +94,10 @@ export default {
   right: 0;
   bottom: 0;
   font-size: 28px;
-  color: white;
+  color: black;
   line-height: 60px;
   height: 300px;
-
+  background: rgba(255, 255, 255, 0.1);
 
 }
 
@@ -120,7 +120,7 @@ export default {
 }
 
 .center-in-center {
-  background-image: url('../../assets/bk1.jpg');
+  background-image: url('../../assets/st.jpeg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

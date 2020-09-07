@@ -13,7 +13,7 @@
           <a> Position:{{ position }}</a>
         </li>
         <li style="color: black">
-          <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{ Property }}</span>
+          <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <a><span> Property: ¥{{ Property }}</span></a>
         </li>
 
 
@@ -162,5 +162,8 @@ li {
 .answer {
   padding-top: 30px;
 
+}
+h1{
+  font-size: 50px;
 }
 </style>

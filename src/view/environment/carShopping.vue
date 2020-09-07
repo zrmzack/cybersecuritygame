@@ -1,6 +1,7 @@
 <template>
   <div class="center-in-center">
     <div class="show">
+      <div>Property: {{Property}}</div>
       <div>
         <img src="../../assets/aodi.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
@@ -139,7 +140,7 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 550px;
+  height: 600px;
   line-height: 50px;
   width: 900px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);

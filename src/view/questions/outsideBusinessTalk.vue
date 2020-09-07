@@ -13,8 +13,9 @@
           <a> Position:{{ position }}</a>
         </li>
         <li>
-          <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{ Property }}</span>
+          <a> Points:{{ money }}</a> &nbsp&nbsp&nbsp <a><span> Property: ¥{{ Property }}</span></a>
         </li>
+
 
       </div>
 
@@ -109,7 +110,7 @@ export default {
 }
 
 .whole {
-  background: url("../../assets/work4.jpg");
+  background: url("../../assets/show16.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

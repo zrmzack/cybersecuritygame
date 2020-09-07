@@ -11,40 +11,38 @@
 </template>
 
 
-
-
 <script>
-  export default {
-    name: "WelcomeProcess",
-    created() {
-      console.log(this.$route.query.username)
-      this.username = this.$route.query.username
+export default {
+  name: "WelcomeProcess",
+  created() {
+    console.log(this.$route.query.username)
+    this.username = this.$route.query.username
 
+  },
+
+  data() {
+    return {
+      username: '',
+      position: 'test',
+      money: 0,
+    }
+  },
+  methods: {
+    add: function () {
+      this.money += 10;
+      this.$router.push({
+        path: '/trainStaffs',
+        query: {
+          username: this.username,
+          money: this.money,
+          position: this.position
+        }
+      })
     },
 
-    data() {
-      return {
-        username: '',
-        position: 'test',
-        money: 0,
-      }
-    },
-    methods: {
-      add: function () {
-        this.money += 10;
-        this.$router.push({
-          path: '/trainStaffs',
-          query: {
-            username: this.username,
-            money: this.money,
-            position: this.position
-          }
-        })
-      },
+  },
 
-    },
-
-  }
+}
 </script>
 <style scoped>
 .show {
@@ -64,8 +62,8 @@
   font-size: 50px;
   color: black;
   line-height: 60px;
-height: 400px;
-  background:rgba(255,255,255,0.6);
+  height: 400px;
+  background: rgba(255, 255, 255, 0.6);
 
 }
 

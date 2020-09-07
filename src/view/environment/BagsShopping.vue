@@ -1,6 +1,7 @@
 <template>
   <div class="center-in-center">
     <div class="show">
+      <div>Property: {{Property}}</div>
       <div>
         <img src="../../assets/lv.jpeg" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:

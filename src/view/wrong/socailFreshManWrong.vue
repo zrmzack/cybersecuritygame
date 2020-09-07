@@ -67,8 +67,9 @@ export default {
   right: 0;
   bottom: 0;
   font-size: 50px;
-  color: white;
+  color: black;
   line-height: 60px;
+  background: rgba(255, 255, 255, 0.6);
 
 
 }
@@ -83,7 +84,7 @@ export default {
 }
 
 .center-in-center {
-  background-image: url('../../assets/bk1.jpg');
+  background-image: url('../../assets/show14.jpeg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

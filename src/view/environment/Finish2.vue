@@ -81,7 +81,7 @@ height: 250px;
 }
 
 .center-in-center {
-  background-image: url('../../assets/bk1.jpg');
+  background-image: url('../../assets/show10.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;

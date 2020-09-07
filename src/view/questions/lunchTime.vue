@@ -13,7 +13,7 @@
           <a> Position: {{ position }}</a>
         </li>
         <li>
-          <a> Points: {{ money }}</a> &nbsp&nbsp&nbsp <span> Property: ¥{{ Property }}</span>
+          <a> Points: {{ money }}</a> &nbsp&nbsp&nbsp <a><span> Property: ¥{{ Property }}</span></a>
         </li>
 
 

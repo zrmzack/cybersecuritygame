@@ -1,6 +1,7 @@
 <template>
   <div class="center-in-center">
     <div class="show">
+      <div>Property: {{Property}}</div>
       <div>
         <img src="../../assets/home1.png" alt="">
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPrice:
@@ -144,7 +145,7 @@ export default {
 <style scoped>
 .show {
   text-align: center;
-  height: 750px;
+  height: 550px;
   line-height: 50px;
   width: 900px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -156,9 +157,10 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  font-size: 50px;
+  font-size: 28px;
   color: white;
   line-height: 60px;
+
 
 
 }
